@@ -1,0 +1,29 @@
+.services {
+
+}
+
+.services__title {
+  font-size: px-to-rem(28px);
+  line-height: px-to-rem(34px);
+  color: $primary;
+  margin: 30px 0 20px;
+}
+
+.services__carousel {
+
+}
+
+@media (min-width: 780px) {
+  .services__title {
+    font-size: px-to-rem(36px);
+    line-height: px-to-rem(43px);
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 980px) {
+  .services__title {
+    font-size: px-to-rem(40px);
+    line-height: px-to-rem(48px);
+  }
+}

@@ -10,6 +10,9 @@ global.$ = {
     config: require('./gulp/config.js'),
     jquery: './js/jquery.js',
     js: './js/**/*.js',
+    carousel: './node_modules/owl.carousel/dist/owl.carousel.min.js',
+    carouselCssDefault: './node_modules/owl.carousel/dist/assets/owl.theme.default.css',
+    carouselCss: './node_modules/owl.carousel/dist/assets/owl.carousel.css'
   }
 };
 

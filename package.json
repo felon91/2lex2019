@@ -37,5 +37,8 @@
   },
   "browserslist": [
     "last 2 version"
-  ]
+  ],
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
+  }
 }

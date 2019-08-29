@@ -1,6 +1,7 @@
 const jsfiles = [
   $.path.jquery,
   $.path.js,
+  $.path.carousel,
 ];
 
 module.exports = function () {

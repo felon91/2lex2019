@@ -1,0 +1,179 @@
+.header {
+  background: linear-gradient(131.16deg, #0081E6 -9.57%, #F4F6FE 92.75%);
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__hamburger {
+  flex-basis: 19px;
+  flex-shrink: 0;
+  padding: 10px 12px 10px 0;
+}
+
+.header__logo {
+  flex-basis: 110px;
+  a {
+    display: block;
+  }
+}
+
+.header__slogan {
+  display: none;
+}
+
+.header__info {
+  margin-left: auto;
+
+  p {
+    margin: 0;
+    font-weight: 300;
+    font-size: px-to-rem(10px);
+    line-height: px-to-rem(12px);
+    text-align: right;
+  }
+  a {
+    font-weight: 700;
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(25px);
+    letter-spacing: px-to-rem(-1.5px);
+    color: $primary;
+    text-decoration: none;
+  }
+  span {
+    display: none;
+  }
+}
+
+.header__section {
+  padding-bottom: 10px;
+}
+
+.header__title {
+  font-size: px-to-rem(30px);
+  line-height: px-to-rem(30px);
+  color: $white;
+  margin: 25px 0;
+  small {
+    display: block;
+    font-size: px-to-rem(20px);
+    line-height: px-to-rem(25px);
+    color: $primary;
+  }
+  span {
+    color: $white;
+  }
+}
+
+.header__button {
+  @include btn();
+}
+
+.header__button--top {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .header__logo {
+    flex-basis: 188px;
+  }
+  .header__info {
+    a {
+      font-size: px-to-rem(28px);
+      line-height: px-to-rem(38px);
+    }
+    p {
+      font-size: px-to-rem(12px);
+      line-height: px-to-rem(14px);
+    }
+    span {
+      display: inline-block;
+    }
+    b {
+      font-weight: 800;
+    }
+  }
+  .header__button {
+    max-width: 330px;
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(20px);
+  }
+  .header__title {
+    font-size: px-to-rem(40px);
+    line-height: px-to-rem(45px);
+    small {
+      font-size: px-to-rem(30px);
+      line-height: px-to-rem(35px);
+    }
+  }
+}
+
+@media (min-width: 780px) {
+  .header {
+    background: none;
+  }
+  .header__section {
+    background: $buttonBg url(#{$imgPath}header-section-tablet.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .header__button--top {
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(16px);
+    max-width: 270px;
+    text-align: center;
+    background-position: calc(100% - 10px) center;
+    display: block;
+    margin-left: 20px;
+  }
+  .header__title {
+    max-width: 440px;
+  }
+  .header__menu {
+    margin-bottom: -20px;
+  }
+}
+
+@media (min-width: 880px) {
+  .header__section {
+    background: $buttonBg url(#{$imgPath}header-section.jpg) center / cover no-repeat;
+  }
+}
+
+@media (min-width: 980px) {
+  .header__section {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  .header__title {
+    font-size: px-to-rem(60px);
+    line-height: px-to-rem(72px);
+    max-width: 680px;
+    small {
+      font-size: px-to-rem(45px);
+      line-height: px-to-rem(54px);
+    }
+  }
+  .header__button {
+    font-size: px-to-rem(20px);
+    max-width: 362px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__slogan {
+    display: block;
+    flex-grow: 1;
+    p {
+      max-width: 210px;
+      margin: 0 auto;
+      font-size: px-to-rem(18px);
+      line-height: px-to-rem(22px);
+    }
+  }
+}

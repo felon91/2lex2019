@@ -1,6 +1,6 @@
 module.exports = function () {
   $.gulp.task('css', function () {
-    return $.gulp.src('css/**/*.css')
+    return $.gulp.src(['css/**/*.css', $.path.carouselCssDefault, $.path.carouselCss])
         .pipe($.gp.plumber())
         .pipe($.gp.sourcemaps.init())
         .pipe($.gp.concat('all.css'))

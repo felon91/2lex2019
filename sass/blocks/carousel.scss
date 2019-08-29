@@ -1,0 +1,151 @@
+.carousel {
+  position: relative;
+  .owl-nav {
+    button.disabled {
+      display: none;
+    }
+    button.owl-next {
+      cursor: pointer;
+      width: 45px;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background:
+              url(#{$imgPath}carousel-arrow.svg) right center no-repeat,
+              linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+      margin: 0;
+      &:hover {
+        background:
+                url(#{$imgPath}carousel-arrow.svg) right center no-repeat,
+                linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);;
+      }
+    }
+    button.owl-prev {
+      cursor: pointer;
+      width: 45px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: scale(-1, -1);
+      background:
+              url(#{$imgPath}carousel-arrow.svg) right center no-repeat,
+              linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+      margin: 0;
+      &:hover {
+        background:
+                url(#{$imgPath}carousel-arrow.svg) right center no-repeat,
+                linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);;
+      }
+    }
+  }
+}
+
+.carousel__item {
+  width: 236px;
+  background: url(#{$imgPath}leaf.png) center top no-repeat #F6F6F6;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 30px 15px 15px 15px;
+  margin: 10px 0;
+}
+
+.carousel__btn {
+  @include btn();
+  margin: 10px auto;
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(19px);
+  padding-left: 25px;
+  padding-right: 35px;
+}
+
+.carousel__title {
+  font-size: px-to-rem(20px);
+  line-height: px-to-rem(24px);
+  font-weight: 600;
+  &::after {
+    content: '';
+    width: 70px;
+    height: 1px;
+    background-color: $accent;
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+.carousel__text {
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(17px);
+  margin: 25px 0;
+}
+
+.carousel__price {
+  font-size: px-to-rem(18px);
+  line-height: px-to-rem(22px);
+  color: $black;
+  font-weight: 600;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.carousel__link {
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(19px);
+  text-align: center;
+  font-weight: 600;
+  a {
+    color: $black;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.carousel__note {
+  font-size: px-to-rem(12px);
+  line-height: px-to-rem(14px);
+  margin: 20px 0;
+}
+
+@media (min-width: 480px) {
+  .carousel__item {
+    width: 300px;
+  }
+  .carousel__title {
+    font-size: px-to-rem(24px);
+    line-height: px-to-rem(29px);
+  }
+  .carousel__text {
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(22px);
+  }
+  .carousel__price {
+    font-size: px-to-rem(22px);
+    line-height: px-to-rem(26px);
+  }
+  .carousel__btn {
+    font-size: px-to-rem(20px);
+    line-height: px-to-rem(24px);
+  }
+  .carousel__link {
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(22px);
+  }
+}
+
+@media (min-width: 980px) {
+  .carousel__item {
+    width: 355px;
+    margin: 10px;
+  }
+  .carousel__title {
+    &::after {
+      display: none;
+    }
+  }
+  .carousel__text {
+    padding-left: 26px;
+    background: url(#{$imgPath}bullet.svg) left 5px no-repeat;
+  }
+}

@@ -1,0 +1,13 @@
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger__svg {
+
+}
+
+@media (min-width: 780px) {
+  .hamburger {
+    display: none;
+  }
+}
