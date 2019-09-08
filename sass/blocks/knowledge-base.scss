@@ -1,0 +1,94 @@
+.knowledge-base {
+  background-color: $second;
+  border-radius: 50px 0;
+}
+
+.knowledge-base__wrap {
+  padding-top: 10px;
+}
+
+.knowledge-base__title {
+  font-size: px-to-rem(28px);
+  line-height: px-to-rem(34px);
+  color: $primary;
+  margin: 20px 0;
+}
+
+.knowledge-base__popular {
+  padding: 10px;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+}
+
+.knowledge-base__faq {
+  padding: 10px;
+  width: calc(100% + 20px);
+  margin: 30px 0 30px -10px;
+}
+
+.knowledge-base__more {
+  text-decoration: none;
+  color: $black;
+  font-size: px-to-rem(18px);
+  line-height: px-to-rem(22px);
+  margin: 10px 0;
+  display: inline-block;
+  span {
+    border-bottom: 1px dashed $black;
+  }
+  &:hover {
+    color: $buttonBgHover;
+    span {
+      border-bottom-color: $buttonBgHover;
+    }
+  }
+  &:active {
+    color: $buttonBgActive;
+    border-bottom-color: $buttonBgActive;
+  }
+}
+
+.knowledge-base__fresh {
+  margin: 30px 0;
+}
+
+.knowledge-base__ask {
+  margin: 30px 0;
+}
+
+.knowledge-base__more--solid {
+  span {
+    border-bottom-style: solid;
+  }
+}
+
+@media (min-width: 680px) {
+  .knowledge-base__wrap {
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 780px) {
+  .knowledge-base__title {
+    font-size: px-to-rem(36px);
+    line-height: px-to-rem(38px);
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .knowledge-base__title {
+    font-size: px-to-rem(40px);
+    line-height: px-to-rem(48px);
+  }
+  .knowledge-base__popular {
+    padding: 20px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
+  .knowledge-base__faq {
+    padding: 20px;
+    width: calc(100% + 40px);
+    margin: 30px 0 30px -20px;
+  }
+}

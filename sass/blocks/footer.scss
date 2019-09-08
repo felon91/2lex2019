@@ -1,0 +1,137 @@
+.footer {
+  background: linear-gradient(140.66deg, #0A0C1B 6.83%, #343951 52.84%, #03A9F4 137.42%);
+}
+.footer__wrap {
+  margin-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__left {
+  flex-basis: 50%;
+  img {
+    margin-bottom: 22px;
+  }
+  p {
+    font-size: px-to-rem(10px);
+    line-height: px-to-rem(12px);
+    margin: 15px 0;
+    color: $white;
+  }
+  a {
+    color: $white;
+    &:hover {
+      color: $buttonBgHover;
+    }
+    &:active {
+      color: $buttonBgActive;
+    }
+  }
+}
+
+.footer__right {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.footer__phone {
+  color: $white;
+  font-size: px-to-rem(10px);
+  line-height: px-to-rem(12px);
+  margin-top: 0;
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(22px);
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+}
+
+.footer__center {
+  display: none;
+}
+
+.footer__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    margin-bottom: 5px;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: px-to-rem(18px);
+    &:hover {
+      color: $buttonBgHover;
+    }
+    &:active {
+      color: $buttonBgActive;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .footer__left {
+    p {
+      font-size: px-to-rem(14px);
+      line-height: px-to-rem(17px);
+    }
+  }
+}
+
+@media (min-width: 680px) {
+  .footer__left {
+    flex-basis: 25%;
+  }
+  .footer__center {
+    display: flex;
+    max-width: 310px;
+    flex-grow: 1;
+    margin: 0 auto;
+
+  }
+  .footer__menu {
+    margin: 0 auto;
+  }
+  .footer__right {
+    flex-basis: 25%;
+  }
+}
+
+@media (min-width: 780px) {
+  .footer__wrap {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .footer__socials {
+    margin-top: 30px;
+  }
+  .footer__right {
+    flex-basis: 270px;
+  }
+  .footer__phone {
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(17px);
+    br {
+      &:last-child {
+        display: none;
+      }
+    }
+    a {
+      font-size: px-to-rem(29px);
+      line-height: px-to-rem(35px);
+      letter-spacing: 0;
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .footer__center {
+    max-width: 370px;
+  }
+}

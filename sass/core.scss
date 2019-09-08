@@ -27,10 +27,60 @@ img {
   display: block;
 }
 
+a {
+  color: $buttonBg;
+  text-decoration: underline;
+  &:hover {
+    color: $buttonBgHover;
+  }
+  &:active {
+    color: $buttonBgActive;
+  }
+  &:visited {
+    //color: $primary;
+  }
+}
+
+p, ul, ol, h1, h2, h3, h4, h5, h6 {
+  color: $black;
+}
+
 .container {
   @include min-max(320px, 100%, 0);
 }
 
 .wrap {
   @include min-max(320px, 1170px, 15px);
+}
+
+.container__services {
+  margin: 50px 0;
+}
+
+.container__stage {
+  margin: 50px 0 30px;
+  padding-bottom: 30px;
+}
+
+.container__case {
+  margin: 50px 0;
+}
+
+.container__work {
+  margin: 50px 0;
+}
+
+.container__form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container__knowledge-base {
+  margin: 50px 0;
+}
+
+@media (min-width: 980px) {
+  .container__stage {
+    padding-bottom: 50px;
+  }
 }

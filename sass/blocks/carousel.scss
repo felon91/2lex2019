@@ -1,4 +1,4 @@
-.carousel {
+.carousel, .case__carousel {
   position: relative;
   .owl-nav {
     button.disabled {
@@ -11,14 +11,10 @@
       position: absolute;
       right: 0;
       top: 0;
-      background:
-              url(#{$imgPath}carousel-arrow.svg) right center no-repeat,
-              linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
       margin: 0;
       &:hover {
-        background:
-                url(#{$imgPath}carousel-arrow.svg) right center no-repeat,
-                linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);;
+        background: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
       }
     }
     button.owl-prev {
@@ -29,14 +25,27 @@
       left: 0;
       top: 0;
       transform: scale(-1, -1);
-      background:
-              url(#{$imgPath}carousel-arrow.svg) right center no-repeat,
-              linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
       margin: 0;
       &:hover {
-        background:
-                url(#{$imgPath}carousel-arrow.svg) right center no-repeat,
-                linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);;
+        background: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+      }
+    }
+    button {
+      .arrow {
+        display: block;
+        fill: $buttonBg;
+        margin-left: auto;
+      }
+      &:hover {
+        .arrow {
+          fill: $buttonBgHover;
+        }
+      }
+      &:active {
+        .arrow {
+          fill: $buttonBgActive;
+        }
       }
     }
   }
@@ -44,7 +53,7 @@
 
 .carousel__item {
   width: 236px;
-  background: url(#{$imgPath}leaf.png) center top no-repeat #F6F6F6;
+  background: url(#{$imgPath}leaf.png) center top no-repeat $grayBlock;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 30px 15px 15px 15px;
@@ -96,8 +105,21 @@
   font-weight: 600;
   a {
     color: $black;
+    text-decoration: none;
+    span {
+      border-bottom: 1px solid $black;
+    }
     &:hover {
-      text-decoration: none;
+      color: $buttonBg;
+      span {
+        border-bottom-color: $buttonBg;
+      }
+    }
+    &:active {
+      color: $buttonBgActive;
+      span {
+        border-bottom-color: $buttonBgActive;
+      }
     }
   }
 }

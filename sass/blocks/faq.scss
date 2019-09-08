@@ -1,0 +1,116 @@
+.faq {
+  background-color: $white;
+  border-radius: 10px;
+}
+
+.faq__title {
+  font-size: px-to-rem(22px);
+  line-height: px-to-rem(25px);
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.faq__item {
+  &:not(:last-child) {
+    margin: 0 0 20px;
+  }
+  p {
+    margin: 0;
+  }
+  &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8) {
+    display: none;
+  }
+}
+
+.faq__link {
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(19px);
+  color: $black;
+  display: block;
+  text-decoration: none;
+  &:hover {
+    color: $buttonBgHover;
+  }
+  &:active {
+    color: $buttonBgActive;
+  }
+}
+
+.faq__view, .faq__comments, .faq__name {
+  font-size: px-to-rem(12px);
+  line-height: px-to-rem(16px);
+  color: $gray;
+  padding-left: 18px;
+  display: inline-block;
+}
+
+.faq__view {
+  background: url(#{$imgPath}eye.svg) left top no-repeat;
+  margin-right: 5px;
+}
+
+.faq__comments {
+  background: url(#{$imgPath}comment.svg) left center no-repeat;
+}
+
+.faq__name {
+  background: url(#{$imgPath}user.svg) left 1px no-repeat;
+  margin-right: 5px;
+}
+
+
+@media (min-width: 640px) {
+  .faq__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .faq__item {
+    flex-basis: 48%;
+    &:nth-child(odd) {
+      margin-right: 4%;
+    }
+    &:nth-child(4) {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 780px) {
+  .faq__title {
+    font-size: px-to-rem(28px);
+    line-height: px-to-rem(34px);
+  }
+  .faq__item {
+    flex-basis: 31%;
+    margin-right: 3.5% !important;
+    &:nth-child(5), &:nth-child(6) {
+      display: block;
+    }
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+    &:nth-child(3n + 3) {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+@media (min-width: 1170px) {
+  .faq__title {
+    font-size: px-to-rem(32px);
+    line-height: px-to-rem(38px);
+  }
+  .faq__item {
+    flex-basis: 24%;
+    margin-right: 1.33% !important;
+    &:nth-child(7), &:nth-child(8) {
+      display: block;
+    }
+    &:nth-child(3n + 3) {
+      margin-right: 1.33% !important;
+    }
+    &:nth-child(4n + 4) {
+      margin-right: 0 !important;
+    }
+  }
+}

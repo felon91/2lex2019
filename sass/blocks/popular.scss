@@ -1,0 +1,132 @@
+.popular {
+  background-color: $white;
+  border-radius: 10px;
+}
+
+.popular__title {
+  font-size: px-to-rem(22px);
+  line-height: px-to-rem(25px);
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.popular__left {
+  margin-bottom: 20px;
+}
+
+.popular__item {
+  &:not(:last-child) {
+    margin: 0 0 20px;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.popular__img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.popular__link {
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(19px);
+  color: $black;
+  text-decoration: none;
+  &:hover {
+    color: $buttonBgHover;
+  }
+  &:active {
+    color: $buttonBgActive;
+  }
+}
+
+.popular__view, .popular__comments {
+  font-size: px-to-rem(12px);
+  line-height: px-to-rem(16px);
+  color: $gray;
+  padding-left: 18px;
+  display: inline-block;
+}
+
+.popular__view {
+  background: url(#{$imgPath}eye.svg) left top no-repeat;
+  margin-right: 5px;
+}
+
+.popular__comments {
+  background: url(#{$imgPath}comment.svg) left center no-repeat;
+}
+
+.popular__right {
+  .popular__item {
+    display: none;
+    &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .popular__block {
+    display: flex;
+  }
+  .popular__left {
+    flex-basis: 220px;
+    flex-shrink: 0;
+    margin-right: 19px;
+  }
+
+  .popular__right {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 680px) {
+  .popular__title {
+    font-size: px-to-rem(28px);
+    line-height: px-to-rem(34px);
+  }
+  .popular__right {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .popular__item {
+    flex-basis: 48%;
+    &:nth-child(odd) {
+      margin-right: 4%;
+    }
+    &:nth-child(4) {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 780px) {
+  .popular__item {
+    &:nth-child(5), &:nth-child(6) {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .popular__left {
+    flex-basis: 270px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .popular__title {
+    font-size: px-to-rem(32px);
+    line-height: px-to-rem(38px);
+  }
+  .popular__item {
+    display: block !important;
+    flex-basis: 31%;
+    margin-right: 3.5% !important;
+    &:nth-child(3n + 3) {
+      margin-right: 0 !important;
+    }
+  }
+}

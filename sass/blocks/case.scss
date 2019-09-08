@@ -1,0 +1,245 @@
+.case {
+  img.case__img {
+    max-width: 100%;
+    width: auto;
+    margin: 20px auto;
+    display: none;
+    box-shadow: $boxShadow;
+  }
+}
+
+.case__title {
+  font-size: px-to-rem(28px);
+  line-height: px-to-rem(34px);
+  font-weight: 700;
+  margin: 20px 0;
+  color: $primary;
+}
+
+.case__item {
+  width: 250px;
+  background: $white;
+  box-shadow: $boxShadow;
+  border-radius: 10px;
+  margin: 5px;
+  position: relative;
+}
+
+.case__left {
+  padding: 60px 20px 20px 20px;
+
+  p {
+    color: $lightGray;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(17px);
+    margin: 15px 0;
+    span {
+      display: block;
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(19px);
+      color: $black;
+      margin-top: 5px;
+    }
+  }
+}
+
+.case__number {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  width: calc(100% - 40px);
+  font-size: px-to-rem(20px);
+  line-height: px-to-rem(24px);
+}
+
+p.case__debt {
+  span {
+    font-size: px-to-rem(26px);
+    line-height: px-to-rem(31px);
+    font-weight: 700;
+  }
+}
+
+p.case__text {
+  span {
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(17px);
+  }
+}
+
+.case__link {
+  font-size: px-to-rem(18px);
+  line-height: px-to-rem(22px);
+  padding-left: 45px;
+  background: url(#{$imgPath}pdf.svg) left top no-repeat;
+  margin: 0 20px 20px 20px;
+  display: block;
+  color: $black;
+  &:hover {
+    color: $buttonBgHover;
+  }
+  &:active {
+    color: $buttonBgActive;
+  }
+}
+
+.case__btn {
+  color: $white;
+  background-color: $buttonBg;
+  border-radius: 0 0 10px 10px;
+  display: block;
+  width: 100%;
+  border: none;
+  appearance: none;
+  font-size: px-to-rem(18px);
+  line-height: px-to-rem(22px);
+  font-weight: 600;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  &:hover {
+    background-color: $buttonBgHover;
+  }
+  &:active {
+    background-color: $buttonBgActive;
+  }
+}
+
+.case__practice {
+  font-size: px-to-rem(18px);
+  line-height: px-to-rem(22px);
+  display: inline-block;
+  color: $black;
+  text-decoration: none;
+  margin: 20px 0;
+  span {
+    border-bottom: 1px solid $black;
+  }
+  &:hover {
+    color: $buttonBgHover;
+    span {
+      border-bottom-color: $buttonBgHover;
+    }
+  }
+  &:active {
+    color: $buttonBgActive;
+    span {
+      border-bottom-color: $buttonBgActive;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .case__item {
+    width: 400px;
+  }
+}
+
+@media (min-width: 780px) {
+  .case {
+    img.case__img {
+      display: block;
+    }
+  }
+  .case__title {
+    font-size: px-to-rem(36px);
+    line-height: px-to-rem(38px);
+    margin-top: 40px;
+  }
+  .case__item {
+    display: flex;
+    width: 555px;
+  }
+  .case__right {
+    order: -1;
+    flex-basis: 220px;
+    flex-shrink: 0;
+    padding-left: 20px;
+  }
+  .case__left {
+    order: 1;
+    padding-top: 7px;
+    p {
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(19px);
+    }
+  }
+  p.case__date {
+    span {
+      font-size: px-to-rem(20px);
+      line-height: px-to-rem(24px);
+    }
+  }
+  p.case__text {
+    span {
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(19px);
+    }
+  }
+  .case__number {
+    position: static;
+    width: auto;
+  }
+  .case__link {
+    margin: 20px 0;
+  }
+  .case__btn {
+    background: none;
+    padding: 0;
+    color: $buttonBg;
+    margin: 10px 0;
+    span {
+      border-bottom: 1px dashed $buttonBg;
+    }
+    &:hover {
+      background: none;
+      color: $buttonBgHover;
+      span {
+        border-color: $buttonBgHover;
+      }
+    }
+    &:active {
+      color: $buttonBgActive;
+      span {
+        border-color: $buttonBgActive;
+      }
+    }
+  }
+  .case__practice {
+    font-size: px-to-rem(20px);
+    line-height: px-to-rem(24px);
+  }
+}
+
+@media (min-width: 1170px) {
+  .case__title {
+    font-size: px-to-rem(40px);
+    line-height: px-to-rem(48px);
+  }
+  .case__item {
+    width: auto;
+  }
+}
+
+@media (min-width: 1240px) {
+  .case__carousel {
+    .owl-nav {
+      button.disabled {
+        display: block;
+        .arrow {
+          fill: $lightGray;
+        }
+      }
+      button.owl-next {
+        background: url(#{$imgPath}carousel-arrow.svg) right center no-repeat;
+        right: -40px;
+        width: 40px;
+      }
+      button.owl-prev {
+        background: url(#{$imgPath}carousel-arrow.svg) right center no-repeat;
+        left: -40px;
+        width: 40px;
+      }
+    }
+  }
+}
