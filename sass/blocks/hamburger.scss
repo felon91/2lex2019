@@ -1,8 +1,27 @@
 .hamburger {
   cursor: pointer;
+  position: relative;
+  z-index: 21;
 }
 
 .hamburger__svg {
+
+}
+
+.hamburger__svg--active {
+  display: none;
+}
+
+.active.hamburger {
+  position: fixed;
+  left: 15px;
+  top: 20px;
+  .hamburger__svg {
+    display: none;
+  }
+  .hamburger__svg--active {
+    display: block;
+  }
 
 }
 

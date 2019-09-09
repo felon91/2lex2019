@@ -21,6 +21,10 @@
           <line x1="1.5" y1="14.1667" x2="17.5" y2="14.1667" stroke="#343951" stroke-width="3" stroke-linecap="round"
                 stroke-linejoin="round"/>
         </svg>
+        <svg class="hamburger__svg hamburger__svg--active" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="18.1472" y1="17.2684" x2="3.00002" y2="2.12128" stroke="black" stroke-width="3" stroke-linecap="round"/>
+          <line x1="3" y1="17.3787" x2="18.1472" y2="2.23152" stroke="black" stroke-width="3" stroke-linecap="round"/>
+        </svg>
       </div>
       <div class="header__logo">
         <a href="#">
@@ -39,33 +43,96 @@
       <button class="header__button header__button--top">Узнать, как гарантированно избавиться от долгов</button>
     </div>
     <nav class="header__menu wrap menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            База знаний
-            <svg class="menu__arrow" width="9" height="5" viewBox="0 0 9 5" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <path
-                  d="M0 0.712142C0.000623709 0.571138 0.04515 0.433454 0.127979 0.316401C0.210809 0.199348 0.328244 0.108149 0.465525 0.0542688C0.602806 0.000388626 0.753804 -0.0137684 0.899537 0.0135784C1.04527 0.0409252 1.17923 0.108555 1.28459 0.207966L4.52055 3.27594L7.75651 0.207966C7.90064 0.0908061 8.08604 0.0295851 8.27565 0.0365371C8.46527 0.0434891 8.64515 0.118102 8.77933 0.245466C8.91351 0.372829 8.99211 0.543562 8.99944 0.723546C9.00676 0.903531 8.94226 1.07951 8.81883 1.21632L5.05171 4.79204C4.91055 4.92524 4.71959 5 4.52055 5C4.3215 5 4.13055 4.92524 3.98938 4.79204L0.22226 1.21632C0.080772 1.08282 0.000841119 0.901504 0 0.712142Z"/>
-            </svg>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">О нас</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Услуги</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Стоимость</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Дела</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Контакты</a>
-        </li>
-      </ul>
+      <div class="menu__mobile">
+        <button class="menu__button">Узнать, как гарантированно избавиться от долгов</button>
+        <div class="menu__switch">
+          <button class="active">Компания</button>
+          <button>База знаний</button>
+        </div>
+      </div>
+      <div class="menu__list">
+        <div class="menu__left">
+          <div class="menu__item">
+            <a class="menu__link menu__link--hide" href="#">
+              База знаний
+              <svg class="menu__arrow" width="9" height="5" viewBox="0 0 9 5" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 0.712142C0.000623709 0.571138 0.04515 0.433454 0.127979 0.316401C0.210809 0.199348 0.328244 0.108149 0.465525 0.0542688C0.602806 0.000388626 0.753804 -0.0137684 0.899537 0.0135784C1.04527 0.0409252 1.17923 0.108555 1.28459 0.207966L4.52055 3.27594L7.75651 0.207966C7.90064 0.0908061 8.08604 0.0295851 8.27565 0.0365371C8.46527 0.0434891 8.64515 0.118102 8.77933 0.245466C8.91351 0.372829 8.99211 0.543562 8.99944 0.723546C9.00676 0.903531 8.94226 1.07951 8.81883 1.21632L5.05171 4.79204C4.91055 4.92524 4.71959 5 4.52055 5C4.3215 5 4.13055 4.92524 3.98938 4.79204L0.22226 1.21632C0.080772 1.08282 0.000841119 0.901504 0 0.712142Z"/>
+              </svg>
+            </a>
+            <div class="menu__sub">
+              <ul class="menu__sub-list">
+                <li class="menu__sub-item">Статьи</li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Пошаговое руководтство</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Финансовый управляющий</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Закон о банкротстве</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Последствия</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Стоимость банкротства</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Плюсы и минусы банкротсва</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Все статьи &#8594;</a>
+                </li>
+              </ul>
+              <ul class="menu__sub-list">
+                <li class="menu__sub-item">Вопросы</li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Можно ли выезать за границу?</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Можно взять кредит после банкротства?</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Отразится ли на мне банкротство супруга?</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Что будет с моей квартирой?</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Как сохранить машину?</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Все вопросы &#8594;</a>
+                </li>
+              </ul>
+              <div class="menu__question">
+                <p class="menu__title">Задайте свой вопрос!</p>
+                <p class="menu__text">Ваш вопрос будет опубликован на сайте. Ответы будете на почту. Анонимно.</p>
+                <a class="menu__btn" href="#">Задать вопрос</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu__right">
+          <div class="menu__item">
+            <a class="menu__link" href="#">О нас</a>
+          </div>
+          <div class="menu__item">
+            <a class="menu__link" href="#">Услуги</a>
+          </div>
+          <div class="menu__item">
+            <a class="menu__link" href="#">Стоимость</a>
+          </div>
+          <div class="menu__item">
+            <a class="menu__link" href="#">Дела</a>
+          </div>
+          <div class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </div>
+        </div>
+      </div>
     </nav>
     <div class="header__section">
       <div class="wrap">
