@@ -1,0 +1,30 @@
+.breadcrumbs {
+
+  p {
+    font-size: px-to-rem(10px);
+    line-height: px-to-rem(12px);
+    color: $gray;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  span {
+    margin: 0 5px;
+    width: 3px;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+    border-bottom: none;
+    &:hover {
+      color: $buttonBgHover;
+    }
+    &:active {
+      color: $buttonBgActive;
+    }
+  }
+
+}

@@ -1,0 +1,52 @@
+.file {
+  background-color: $grayBlock;
+  border-radius: 5px;
+  padding: 9px 15px;
+  p {
+    margin: 5px 0;
+  }
+  span {
+    color: $gray;
+  }
+  a {
+    color: $black;
+    border-bottom-color: transparent;
+    &:hover {
+      border-bottom-color: $buttonBgHover;
+    }
+    &:active {
+      border-bottom-color: $buttonBgActive;
+    }
+  }
+  div {
+    display: flex;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(20px);
+    &::before {
+      margin: 5px 0;
+      flex-basis: 40px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.file__pdf {
+  &::before {
+    content: 'pdf';
+    color: $accent;
+  }
+}
+
+.file__docx {
+  &::before {
+    content: 'docx';
+    color: $buttonBg;
+  }
+}
+
+.file__xlsx {
+  &::before {
+    content: 'xlsx';
+    color: $green;
+  }
+}

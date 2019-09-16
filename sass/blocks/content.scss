@@ -1,0 +1,67 @@
+p.content__preview {
+  color: $gray;
+  font-size: px-to-rem(12px);
+  line-height: px-to-rem(18px);
+  margin-top: 15px;
+}
+
+.content__information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 15px;
+}
+
+.content__comments {
+  a {
+    font-size: px-to-rem(10px);
+    line-height: px-to-rem(12px);
+    color: $gray;
+    text-decoration: none;
+    padding: 3px 0 3px 25px;
+    background: url(#{$imgPath}comment.svg) left 1px / 18px no-repeat;
+    display: inline-block;
+    border-bottom: none;
+    &:hover {
+      color: $buttonBgHover;
+      span {
+        border-bottom-color: $buttonBgHover;
+      }
+    }
+    &:active {
+      color: $buttonBgActive;
+      border-bottom-color: $buttonBgActive;
+    }
+  }
+  span {
+    border-bottom: 1px dashed $gray;
+  }
+}
+
+.content__share {
+  p {
+    margin: 0;
+    font-size: px-to-rem(10px);
+    line-height: px-to-rem(12px);
+    color: $gray;
+  }
+}
+
+.content__img {
+  margin: 15px 0;
+
+  p {
+    font-size: px-to-rem(10px);
+    line-height: px-to-rem(12px);
+    margin: 10px 0;
+    color: $gray;
+  }
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.content__file {
+  margin: 10px 0;
+}
