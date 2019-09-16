@@ -2,6 +2,21 @@
   background: linear-gradient(131.16deg, #0081E6 -9.57%, #F4F6FE 92.75%);
 }
 
+.is-sticky {
+  .header {
+    background: linear-gradient(180deg, #EBEFFF 0%, #FFFFFF 100%);
+  }
+}
+
+.header--sticky {
+  z-index: 1000;
+}
+
+.header--padding {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
 .header__wrap {
   display: flex;
   align-items: center;
@@ -79,7 +94,13 @@
 
 @media (min-width: 480px) {
   .header__logo {
-    flex-basis: 188px;
+    flex-basis: 188px;transition-duration: 300ms;
+    transition-property: flex-basis;
+  }
+  .is-sticky {
+    .header__logo {
+      flex-basis: 150px;
+    }
   }
   .header__info {
     a {
@@ -121,21 +142,36 @@
     background-size: cover;
     padding-top: 50px;
     padding-bottom: 60px;
+    margin-top: -20px;
   }
   .header__button--top {
     font-size: px-to-rem(16px);
     line-height: px-to-rem(16px);
-    max-width: 270px;
+    max-width: 250px;
     text-align: center;
     background-position: calc(100% - 10px) center;
     display: block;
     margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+    transition-property: margin;
+    transition-duration: 300ms;
   }
   .header__title {
     max-width: 440px;
   }
-  .header__menu {
-    margin-bottom: -20px;
+  .is-sticky {
+    .header__button--top {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .header__menu {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+      max-width: 100%;
+      background: $primary;
+    }
   }
 }
 
@@ -162,6 +198,17 @@
   .header__button {
     font-size: px-to-rem(20px);
     max-width: 362px;
+    padding-left: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .header__button--top {
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(16px);
+    max-width: 260px;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 
@@ -170,10 +217,21 @@
     display: block;
     flex-grow: 1;
     p {
-      max-width: 210px;
-      margin: 0 auto;
+      max-width: 240px;
+      margin: 5px auto 0;
       font-size: px-to-rem(18px);
       line-height: px-to-rem(22px);
+    }
+  }
+  .header__info {
+    a {
+      font-size: px-to-rem(29px);
+      line-height: px-to-rem(35px);
+      letter-spacing: 0;
+    }
+    p {
+      font-size: px-to-rem(14px);
+      line-height: px-to-rem(17px);
     }
   }
 }
