@@ -63,5 +63,42 @@ p.content__preview {
 }
 
 .content__file {
-  margin: 10px 0;
+  margin: 15px 0;
+}
+
+.content__btn {
+  @include btn();
+  max-width: 263px;
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(19px);
+  padding-left: 40px;
+  margin: 15px auto;
+}
+
+a.content__link--dashed {
+  border-bottom: none;
+  span {
+    border-bottom: 1px dashed $buttonBg;
+  }
+  &:hover {
+    span {
+      border-bottom-color: $buttonBgHover;
+    }
+  }
+  &:active {
+    span {
+      border-bottom-color: $buttonBgActive;
+    }
+  }
+}
+
+.content__table {
+  margin: 15px 0;
+}
+
+.content__form-article {
+  background-color: $second;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px 0;
 }

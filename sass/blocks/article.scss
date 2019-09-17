@@ -1,6 +1,6 @@
 .article {
   h1 {
-    margin: 10px 0;
+    margin: 10px 0 15px;
     font-size: px-to-rem(22px);
     line-height: px-to-rem(26px);
     color: $primary;
@@ -12,13 +12,19 @@
     line-height: px-to-rem(26px);
     color: $primary;
     font-weight: 700;
-    margin: 20px 0 10px;
+    margin: 20px 0 15px;
   }
-
+  h3 {
+    font-weight: 600;
+    font-size: px-to-rem(17px);
+    line-height: px-to-rem(20px);
+    color: $primary;
+    margin: 20px 0 15px 0;
+  }
   p {
     font-size: px-to-rem(14px);
     line-height: px-to-rem(22px);
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
   }
   a {
     color: $buttonBg;
@@ -31,6 +37,60 @@
     &:active {
       color: $buttonBgActive;
       border-bottom-color: $buttonBgActive;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 5px;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(18px);
+    margin: 0 0 15px 0;
+    border-radius: 5px;
+    background-color: $grayBlock;
+    li {
+      padding-left: 30px;
+      position: relative;
+      margin: 10px 0;
+      &::after {
+        content: '';
+        background-color: $accent;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 5px;
+      }
+    }
+  }
+  ol {
+    list-style: none;
+    padding: 5px;
+    background-color: $grayBlock;
+    margin: 0 0 15px 0;
+    border-radius: 5px;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(18px);
+    counter-reset: myCounter;
+    li {
+      padding-left: 35px;
+      position: relative;
+      margin: 10px 0;
+      &::before {
+        counter-increment: myCounter;
+        content: counter(myCounter)'.';
+        position: absolute;
+        left: 5px;
+        top: -3px;
+        font-weight: 600;
+        color: $accent;
+        font-size: px-to-rem(13px);
+        line-height: px-to-rem(22px);
+        width: 22px;
+        background-color: $white;
+        border-radius: 50%;
+        text-align: center;
+      }
     }
   }
 }

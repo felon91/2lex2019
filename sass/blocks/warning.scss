@@ -1,0 +1,19 @@
+.warning {
+  background-color: $grayBlock;
+  border-radius: 10px;
+  padding: 10px 20px;
+  position: relative;
+  margin: 20px 0;
+  p {
+    margin: 15px 0;
+  }
+  &::before {
+    content: '';
+    width: 35px;
+    height: 35px;
+    background: url('../img/warning-icon.svg') center no-repeat;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+  }
+}
