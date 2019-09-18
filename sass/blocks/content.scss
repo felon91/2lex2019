@@ -127,3 +127,42 @@ a.content__link--dashed {
 .content__article-theme {
   margin: 20px 0;
 }
+
+.content__question-theme {
+  margin: 20px 0;
+}
+
+.content__turn {
+  margin: 20px 0;
+}
+
+.content__themes {
+  margin: 20px 0;
+}
+
+.content__information {
+  display: flex;
+  margin: 20px 0;
+}
+
+.content__author {
+  display: flex;
+  align-items: center;
+  div {
+    margin-left: 10px;
+  }
+  img {
+    flex-shrink: 0;
+  }
+  p {
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(17px);
+    margin: 0;
+    color: $buttonBg;
+    &:first-child {
+      font-size: px-to-rem(12px);
+      line-height: px-to-rem(14px);
+      color: $gray;
+    }
+  }
+}

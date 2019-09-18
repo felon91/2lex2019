@@ -1,0 +1,30 @@
+.turn {
+  background-color: $grayBlock;
+  border-radius: 10px;
+}
+
+p.turn__title {
+  background: $second;
+  border-radius: 10px 10px 0px 0px;
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(28px);
+  padding: 6px 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.turn__bottom {
+  padding: 10px 20px 1px;
+}
+
+.turn__item {
+  margin: 0 0 15px 0;
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(18px);
+  a {
+    border-bottom: none;
+  }
+  span {
+    color: $black;
+  }
+}

@@ -37,6 +37,7 @@ p.question-theme__title {
 .question-theme__links {
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
   a {
     border-bottom: none;
   }
@@ -46,6 +47,7 @@ p.question-theme__title {
   padding-right: 15px;
   font-size: px-to-rem(14px);
   line-height: px-to-rem(17px);
+  background: url(#{$imgPath}refresh.svg) right center no-repeat;
   span {
     border-bottom: 1px dashed $buttonBg;
   }
