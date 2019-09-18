@@ -21,6 +21,13 @@
     color: $primary;
     margin: 20px 0 15px 0;
   }
+  h4 {
+    font-weight: 600;
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(18px);
+    color: $primary;
+    margin: 20px 0 15px 0;
+  }
   p {
     font-size: px-to-rem(14px);
     line-height: px-to-rem(22px);

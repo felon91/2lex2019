@@ -1,0 +1,24 @@
+.lawyer {
+  border-radius: 10px;
+  padding: 40px 20px 10px;
+  background: url(#{$imgPath}quote.svg) center 10px no-repeat $grayBlock;
+}
+
+.lawyer__person {
+  padding-left: 45px;
+  background: url(#{$imgPath}jumaev-mini.png) left center no-repeat;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 10px 0;
+  p {
+    font-size: px-to-rem(12px);
+    line-height: px-to-rem(14px);
+    color: $gray;
+    margin: 0;
+    &:first-child {
+      font-size: px-to-rem(14px);
+      line-height: px-to-rem(17px);
+      color: $black;
+    }
+  }
+}

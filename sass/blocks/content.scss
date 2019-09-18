@@ -92,13 +92,38 @@ a.content__link--dashed {
   }
 }
 
+.content__warning {
+  margin: 20px 0;
+}
+
 .content__table {
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .content__form-article {
   background-color: $second;
   border-radius: 10px;
   padding: 25px;
-  margin: 15px 0;
+  margin: 20px 0;
+}
+
+.content__example {
+  margin: 20px 0;
+}
+
+.content__lawyer {
+  margin: 20px 0;
+}
+
+.content__vote {
+  margin: 20px 0;
+}
+
+.content__documents {
+  width: calc(100% + 15px);
+  margin: 20px 0;
+}
+
+.content__article-theme {
+  margin: 20px 0;
 }

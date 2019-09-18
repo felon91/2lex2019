@@ -1,0 +1,60 @@
+.documents {
+ position: relative;
+  &::after {
+    content: '';
+    width: calc(100% + 15px);
+    height: 100%;
+    background-color: $grayBlock;
+    position: absolute;
+    left: -15px;
+    top: 0;
+  }
+  .owl-nav {
+    button {
+      .arrow {
+        width: 10px;
+        height: 19px;
+        fill: $gray;
+      }
+    }
+    button.disabled {
+      display: none;
+    }
+    button.owl-next {
+      background: none;
+      right: 10px;
+      width: 40px;
+      &:hover {
+        background: none;
+      }
+    }
+    button.owl-prev {
+      background: none;
+      left: 0;
+      width: 40px;
+      &:hover {
+        background: none;
+      }
+    }
+  }
+  .documents__item {
+    background: $second;
+    box-shadow: $boxShadow;
+    border-radius: 0px 0px 10px 10px;
+    margin: 10px 0 10px 10px;
+    p {
+      font-size: px-to-rem(14px);
+      line-height: px-to-rem(20px);
+      color: $gray;
+      padding: 7px 10px;
+    }
+    img {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+}
+
+.documents__carousel {
+  padding-left: 20px;
+}

@@ -1,0 +1,35 @@
+.example {
+  background-color: $grayBlock;
+  border-radius: 10px;
+  position: relative;
+}
+
+p.example__title {
+  background: $second;
+  border-radius: 10px 10px 0px 0px;
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(28px);
+  padding: 6px 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.example__bottom {
+  padding: 10px 20px;
+  a {
+    border-bottom: none;
+    span {
+      border-bottom: 1px solid $buttonBg;
+    }
+    &:hover {
+      span {
+        border-bottom-color: $buttonBgHover;
+      }
+    }
+    &:active {
+      span {
+        border-bottom-color: $buttonBgActive;
+      }
+    }
+  }
+}

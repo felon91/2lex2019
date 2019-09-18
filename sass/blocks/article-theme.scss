@@ -1,0 +1,42 @@
+.article-theme {
+  background: $grayBlock;
+  img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+a.article-theme__link {
+  display: block;
+  border-bottom: none;
+  box-shadow: $boxShadow;
+  border-radius: 10px;
+  padding-bottom: 1px;
+  &:hover {
+    box-shadow: $boxShadowHover;
+    .article-theme__title {
+      color: $buttonBgHover;
+    }
+  }
+  &:active {
+    .article-theme__title {
+      color: $buttonBgActive;
+    }
+  }
+}
+
+.article-theme__title {
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(16px);
+  color: $buttonBg;
+  display: block;
+  margin: 10px 15px;
+}
+
+.article-theme__status {
+  font-size: px-to-rem(12px);
+  line-height: px-to-rem(20px);
+  color: $gray;
+  display: block;
+  margin: 10px 15px;
+}
