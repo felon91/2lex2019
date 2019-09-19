@@ -70,3 +70,18 @@ p.question-theme__title {
     border-bottom: 1px solid $buttonBg;
   }
 }
+
+@media (min-width: 560px) {
+  .question-theme--left {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    margin-top: 7px;
+  }
+  .question-theme--right {
+    float: right;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 7px;
+  }
+}

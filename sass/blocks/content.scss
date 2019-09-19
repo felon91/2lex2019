@@ -1,3 +1,17 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__left {
+  order: 2;
+}
+
+.content__right {
+  order: 1;
+  margin: 20px 0;
+}
+
 p.content__preview {
   color: $gray;
   font-size: px-to-rem(12px);
@@ -39,11 +53,38 @@ p.content__preview {
 }
 
 .content__share {
+  display: flex;
+  align-items: center;
   p {
-    margin: 0;
+    margin: 1px 5px 0 0;
     font-size: px-to-rem(10px);
     line-height: px-to-rem(12px);
     color: $gray;
+  }
+  ul {
+    background: none;
+    margin: 0;
+    padding: 0;
+    li {
+      padding-left: 0;
+      &::after {
+        display: none;
+      }
+      a {
+        border-bottom: none;
+      }
+      .ya-share2__badge {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.content__share--bottom {
+  display: block;
+  text-align: right;
+  p {
+    margin: 0 0 5px 0;
   }
 }
 
@@ -163,6 +204,67 @@ a.content__link--dashed {
       font-size: px-to-rem(12px);
       line-height: px-to-rem(14px);
       color: $gray;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  p.content__preview {
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(22px);
+  }
+  .content__comments {
+    a {
+      background-position: left center;
+      font-size: px-to-rem(14px);
+      line-height: px-to-rem(17px);
+    }
+  }
+  .content__share {
+    p {
+      font-size: px-to-rem(14px);
+      line-height: px-to-rem(17px);
+    }
+    .ya-share2__container_size_s {
+      .ya-share2__icon {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+  .content__share--bottom {
+    display: flex;
+    p {
+      margin-right: 10px;
+      margin-top: 1px;
+    }
+  }
+  .content__img {
+    p {
+      font-size: px-to-rem(16px);
+    }
+  }
+}
+
+@media (min-width: 560px) {
+  .content__img--left {
+    width: 220px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    p {
+      font-size: px-to-rem(12px);
+    }
+  }
+  .content__img--right {
+    width: 220px;
+    float: right;
+    margin-left: 20px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    p {
+      font-size: px-to-rem(12px);
     }
   }
 }

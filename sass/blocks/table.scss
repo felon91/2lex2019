@@ -36,3 +36,16 @@
     border: 1px solid #ececec;
   }
 }
+
+@media (min-width: 480px) {
+  .table {
+    width: 100%;
+  }
+  .table__wrap {
+    min-width: 100%;
+    th, td {
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(19px);
+    }
+  }
+}

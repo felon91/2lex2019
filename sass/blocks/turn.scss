@@ -28,3 +28,18 @@ p.turn__title {
     color: $black;
   }
 }
+
+@media (min-width: 560px) {
+  .turn--left {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 7px;
+  }
+  .turn--right {
+    width: 300px;
+    float: right;
+    margin-left: 20px;
+    margin-top: 7px;
+  }
+}

@@ -39,7 +39,6 @@
   }
   .documents__item {
     background: $second;
-    box-shadow: $boxShadow;
     border-radius: 0px 0px 10px 10px;
     margin: 10px 0 10px 10px;
     p {
@@ -51,6 +50,15 @@
     img {
       width: auto;
       max-width: 100%;
+    }
+    a {
+      box-shadow: $boxShadow;
+      display: block;
+      border-bottom: none;
+      border-radius: 0px 0px 10px 10px;
+      &:hover {
+        box-shadow: $boxShadowHover;
+      }
     }
   }
 }

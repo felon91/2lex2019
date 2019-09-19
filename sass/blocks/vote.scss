@@ -106,3 +106,39 @@ p.vote__count {
   color: $gray;
   margin-bottom: 10px;
 }
+
+@media (min-width: 480px) {
+  .vote__title {
+    font-size: px-to-rem(22px);
+    line-height: px-to-rem(28px);
+  }
+  .vote__radio {
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(20px);
+    label {
+      &::after {
+        top: 2px;
+      }
+    }
+    input {
+      display: none;
+      &:checked {
+        + label {
+          &::before {
+            top: 5px;
+          }
+        }
+      }
+    }
+  }
+  .vote__answer {
+    p {
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(20px);
+    }
+  }
+  p.vote__count {
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(20px);
+  }
+}

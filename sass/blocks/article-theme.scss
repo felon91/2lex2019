@@ -40,3 +40,18 @@ a.article-theme__link {
   display: block;
   margin: 10px 15px;
 }
+
+@media (min-width: 560px) {
+  .article-theme--left {
+    float: left;
+    width: 220px;
+    margin-top: 7px;
+    margin-right: 20px;
+  }
+  .article-theme--right {
+    float: right;
+    width: 220px;
+    margin-top: 7px;
+    margin-left: 20px;
+  }
+}

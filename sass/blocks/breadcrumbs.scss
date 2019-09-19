@@ -1,5 +1,4 @@
 .breadcrumbs {
-
   p {
     font-size: px-to-rem(10px);
     line-height: px-to-rem(12px);
@@ -26,5 +25,13 @@
       color: $buttonBgActive;
     }
   }
+}
 
+@media (min-width: 480px) {
+  .breadcrumbs {
+    p {
+      font-size: px-to-rem(14px);
+      line-height: px-to-rem(17px);
+    }
+  }
 }
