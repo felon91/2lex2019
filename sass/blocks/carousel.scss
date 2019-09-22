@@ -11,10 +11,11 @@
       position: absolute;
       right: 0;
       top: 0;
-      background: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+      //background: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
       margin: 0;
       &:hover {
-        background: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        //background: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        background: none;
       }
     }
     button.owl-prev {
@@ -25,10 +26,11 @@
       left: 0;
       top: 0;
       transform: scale(-1, -1);
-      background: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+      //background: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
       margin: 0;
       &:hover {
-        background: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        //background: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        background: none;
       }
     }
     button {
@@ -57,7 +59,7 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 30px 15px 15px 15px;
-  margin: 15px 0;
+  margin: 15px 7px;
 }
 
 .carousel__btn {
