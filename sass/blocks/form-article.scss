@@ -110,13 +110,14 @@ p.form-article__title {
 }
 
 @media (min-width: 780px) {
-  .form-article__title {
-    font-size: px-to-rem(28px);
-    line-height: px-to-rem(34px);
+  p.form-article__title {
+    font-size: px-to-rem(22px);
+    line-height: px-to-rem(26px);
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
-  .form-article__text {
+  p.form-article__text {
     margin-bottom: 5px;
   }
   .form-article__block {
@@ -148,5 +149,12 @@ p.form-article__title {
     br {
       display: none;
     }
+  }
+}
+
+@media (min-width: 1170px) {
+  p.form-article__title {
+    font-size: px-to-rem(32px);
+    line-height: px-to-rem(38px);
   }
 }

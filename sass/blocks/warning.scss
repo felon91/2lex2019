@@ -16,3 +16,17 @@
     top: -10px;
   }
 }
+
+@media (min-width: 780px) {
+  .warning {
+    padding-left: 45px;
+    p {
+      margin: 20px 0;
+    }
+    &::before {
+      width: 55px;
+      height: 55px;
+      background-size: cover;
+    }
+  }
+}

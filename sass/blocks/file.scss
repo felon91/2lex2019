@@ -50,3 +50,15 @@
     color: $green;
   }
 }
+
+@media (min-width: 1170px) {
+  .file {
+    div {
+      &::before {
+        margin: 7px 0;
+        font-size: px-to-rem(16px);
+        line-height: px-to-rem(23px);
+      }
+    }
+  }
+}

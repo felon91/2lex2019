@@ -35,3 +35,12 @@
     }
   }
 }
+
+@media (min-width: 1170px) {
+  .breadcrumbs {
+    p {
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(19px);
+    }
+  }
+}

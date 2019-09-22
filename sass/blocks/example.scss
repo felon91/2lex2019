@@ -41,3 +41,21 @@ p.example__title {
     padding: 10px 20px;
   }
 }
+
+@media (min-width: 780px) {
+  p.example__title {
+    padding-left: 45px;
+  }
+  .example__bottom {
+    padding-left: 45px;
+  }
+}
+
+@media (min-width: 1170px) {
+  p.example__title {
+    font-size: px-to-rem(20px);
+    line-height: px-to-rem(22px);
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}

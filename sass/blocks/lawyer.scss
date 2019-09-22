@@ -22,3 +22,32 @@
     }
   }
 }
+
+@media (min-width: 780px) {
+  .lawyer {
+    padding-left: 65px;
+    padding-top: 25px;
+    background-position: 28px 30px;
+  }
+  .lawyer__person {
+    p {
+      &:first-child {
+        font-size: px-to-rem(15px);
+        line-height: px-to-rem(18px);
+      }
+    }
+  }
+}
+
+@media (min-width: 1170px) {
+  .lawyer__person {
+    p {
+      font-size: px-to-rem(14px);
+      line-height: px-to-rem(17px);
+      &:first-child {
+        font-size: px-to-rem(16px);
+        line-height: px-to-rem(19px);
+      }
+    }
+  }
+}

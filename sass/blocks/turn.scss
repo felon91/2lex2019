@@ -43,3 +43,17 @@ p.turn__title {
     margin-top: 7px;
   }
 }
+
+
+@media (min-width: 780px) {
+  .turn__item {
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(18px);
+  }
+}
+
+@media (min-width: 1170px) {
+  .turn__item {
+    margin-bottom: 20px;
+  }
+}

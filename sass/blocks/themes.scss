@@ -26,3 +26,12 @@
     }
   }
 }
+
+@media (min-width: 1170px) {
+  .themes {
+    a {
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(18px);
+    }
+  }
+}

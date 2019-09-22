@@ -142,6 +142,9 @@
     max-width: 440px;
     margin-top: 5px;
   }
+  .form--leaf {
+    background: url(#{$imgPath}leaf.png) center top no-repeat $second;
+  }
 }
 
 @media (min-width: 980px) {

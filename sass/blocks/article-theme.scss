@@ -55,3 +55,16 @@ a.article-theme__link {
     margin-left: 20px;
   }
 }
+
+@media (min-width: 1170px) {
+  .article-theme--left, .article-theme--right {
+    width: 270px;
+  }
+  .article-theme__title {
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(18px);
+  }
+  .article-theme__status {
+    font-size: px-to-rem(14px);
+  }
+}

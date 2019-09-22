@@ -85,3 +85,22 @@ p.question-theme__title {
     margin-top: 7px;
   }
 }
+
+@media (min-width: 1170px) {
+  .question-theme--left, .question-theme--right {
+    width: 378px;
+  }
+  .question-theme__title {
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(28px);
+  }
+  .question-theme__item {
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(18px);
+    margin-bottom: 15px;
+  }
+  .question-theme__all, .question-theme__more {
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(19px);
+  }
+}

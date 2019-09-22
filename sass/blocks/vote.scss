@@ -142,3 +142,50 @@ p.vote__count {
     line-height: px-to-rem(20px);
   }
 }
+
+@media (min-width: 780px) {
+  .vote {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  p.vote__title {
+    font-size: px-to-rem(22px);
+    line-height: px-to-rem(28px);
+    margin: 20px 0;
+  }
+  .vote__btn {
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(22px);
+  }
+  p.vote__count {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .vote__title {
+    font-size: px-to-rem(24px);
+    line-height: px-to-rem(28px);
+  }
+  .vote__radio {
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(20px);
+    margin: 20px 0;
+  }
+  .vote__btn {
+    font-size: px-to-rem(20px);
+    line-height: px-to-rem(24px);
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  .vote__answer {
+    p {
+      font-size: px-to-rem(18px);
+      line-height: px-to-rem(20px);
+    }
+  }
+  p.vote__count {
+    font-size: px-to-rem(18px);
+    margin-top: 30px;
+  }
+}

@@ -49,3 +49,12 @@
     }
   }
 }
+
+@media (min-width: 1170px) {
+  .table__wrap {
+    td, th {
+      font-size: px-to-rem(18px);
+      line-height: px-to-rem(22px);
+    }
+  }
+}
