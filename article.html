@@ -6,6 +6,7 @@
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <link rel="stylesheet" href="css/all.min.css" type="text/css"/>
   <link rel="stylesheet" href="css/style.min.css" type="text/css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
 <body>
 <div class="container">
@@ -196,7 +197,9 @@
           </div>
         </div>
         <div class="content__img">
-          <img src="img/content-img.jpg" alt="">
+          <a data-fancybox="gallery" href="img/content-img.jpg">
+            <img src="img/content-img.jpg" alt="">
+          </a>
           <p>Источник  - images.yandex.ru</p>
         </div>
         <p>Банкротство физических лиц стало доступным уже 3 года назад, однако вопросы и споры, связанные с процедурой, не утихают до сих пор. По-прежнему актуальными темами остаются порядок признания несостоятельности, перечень документов, действия в суде, цена и, конечно – чем грозит банкротство. В этой статье хотелось бы описать полностью действия должника по подготовке <a href="#">необходимых документов</a> как вести себя в суде и что будет после признания банкротства физических лиц.</p>
@@ -285,7 +288,9 @@
         <h3>Заголовок третьего уровня в две строчки выглядит как-то так (h3)</h3>
         <p>Ниже представлен ряд ценных рекомендаций от лиц, которые ежедневно участвуют в судебных процессах и, как никто другой, осведомлены обо всех тонкостях банкротства должников. Итак, ликбез от финансовых управляющих!</p>
         <div class="content__img content__img--left">
-          <img src="img/content-img.jpg" alt="">
+          <a data-fancybox="gallery" href="img/content-img.jpg">
+            <img src="img/content-img.jpg" alt="">
+          </a>
           <p>Источник  - images.yandex.ru</p>
         </div>
         <p>Ниже представлен ряд ценных рекомендаций от лиц, которые ежедневно участвуют в судебных процессах и, как никто другой, осведомлены обо всех тонкостях банкротства должников. Итак, ликбез от финансовых управляющих!</p>
@@ -335,15 +340,15 @@
           <p class="vote__title">Ожидаете ли Вы упрощенное банкротство физлиц?</p>
           <div class="vote__answer">
             <p>Такой длинный вопрос, что он прямо не влазиет в одну строчку и приходится писать в две (55%, 143 Голосов)</p>
-            <div class="vote__progress"></div>
+            <div style="width: 80%" class="vote__progress"></div>
           </div>
           <div class="vote__answer">
             <p>Да, ожидаю (32%, 82 Голосов)</p>
-            <div class="vote__progress"></div>
+            <div style="width: 50%" class="vote__progress"></div>
           </div>
           <div class="vote__answer">
             <p>Нет времени ждать, подаю на банкротство сейчас</p>
-            <div class="vote__progress"></div>
+            <div style="width: 30%" class="vote__progress"></div>
           </div>
           <p class="vote__count">Всего проголосовавших: <span>1294</span></p>
         </div>
@@ -861,6 +866,7 @@
   </footer>
 </div>
 <script src="js/all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script>
   $(document).ready(function () {
     $('.documents__carousel').owlCarousel({
@@ -959,6 +965,10 @@
     }
 
     t602_init();
+
+    $('.table-of-contents__title').on('click', function() {
+      $('.table-of-contents').addClass('table-of-contents--active');
+    })
   });
 </script>
 </body>

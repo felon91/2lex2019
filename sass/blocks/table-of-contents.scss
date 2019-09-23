@@ -15,6 +15,15 @@
   }
 }
 
+.table-of-contents--active {
+  ol.table-of-contents__list {
+    height: 100%;
+  }
+  &::after {
+    display: none;
+  }
+}
+
 p.table-of-contents__title {
   font-size: px-to-rem(16px);
   line-height: px-to-rem(20px);
@@ -23,6 +32,7 @@ p.table-of-contents__title {
   background-color: $white;
   border-radius: 10px 10px 0 0;
   margin-bottom: 0;
+  cursor: pointer;
   span {
     padding-right: 20px;
     background: url(#{$imgPath}table-of-content-arrow.svg) right center no-repeat;
@@ -130,5 +140,6 @@ ol.table-of-contents__list {
   }
   p.table-of-contents__title {
     padding-left: 35px;
+    cursor: default;
   }
 }
