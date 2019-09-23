@@ -51,13 +51,24 @@
   }
 }
 
+@media (min-width: 780px) {
+  .file {
+    padding: 9px 25px;
+    div {
+      &::before {
+        flex-basis: 45px;
+        font-size: px-to-rem(16px);
+        line-height: px-to-rem(23px);
+      }
+    }
+  }
+}
+
 @media (min-width: 1170px) {
   .file {
     div {
       &::before {
         margin: 7px 0;
-        font-size: px-to-rem(16px);
-        line-height: px-to-rem(23px);
       }
     }
   }
