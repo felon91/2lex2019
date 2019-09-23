@@ -1,0 +1,43 @@
+.matter__info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.matter__author {
+  margin: 3px 20px 3px 0;
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 8px;
+    display: block;
+  }
+  p {
+    color: $gray;
+    font-size: px-to-rem(10px);
+    line-height: px-to-rem(12px);
+    margin: 0;
+  }
+  span {
+    color: $black;
+    font-size: px-to-rem(12px);
+    line-height: px-to-rem(14px);
+    display: block;
+    span {
+      color: $gray;
+      margin: 0;
+      display: inline-block;
+    }
+  }
+}
+
+.matter__date {
+  margin: 5px 0;
+  align-self: flex-end;
+  p {
+    color: $gray;
+    font-size: px-to-rem(10px);
+    line-height: px-to-rem(12px);
+    margin: 0;
+  }
+}
