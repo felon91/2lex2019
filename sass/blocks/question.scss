@@ -108,6 +108,12 @@
   margin: 20px 0;
 }
 
+.question__popular {
+  margin: 50px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 @media (min-width: 780px) {
   .question__title {
     font-size: px-to-rem(28px);

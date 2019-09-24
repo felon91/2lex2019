@@ -1,0 +1,40 @@
+.ask-and-help {
+
+}
+
+.ask-and-help__wrap {
+
+}
+
+.ask-and-help__block {
+  padding: 20px 15px;
+  border-radius: 10px;
+  margin: 23px 0;
+  p {
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(17px);
+    margin: 15px 0;
+    &:first-of-type {
+      font-size: px-to-rem(20px);
+      line-height: px-to-rem(24px);
+      margin: 0 0 15px 0;
+    }
+  }
+}
+
+.ask-and-help__ask {
+  background-color: $second;
+}
+
+.ask-and-help__help {
+  background-color: $lightGreen;
+}
+
+.ask-and-help__btn {
+  @include btn();
+  text-decoration: none;
+  max-width: initial;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 10px;
+}

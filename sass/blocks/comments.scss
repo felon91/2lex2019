@@ -122,6 +122,21 @@
   }
 }
 
+.comments__item--active {
+  position: relative;
+  &::after {
+    content: '';
+    background-color: $lightGreen;
+    position: absolute;
+    left: -7px;
+    top: -5px;
+    border-radius: 10px;
+    width: calc(100% + 15px);
+    height: calc(100% + 10px);
+    z-index: -1;
+  }
+}
+
 .comments__top {
   display: flex;
   justify-content: space-between;
