@@ -8,6 +8,36 @@
   font-weight: 600;
   color: $primary;
   margin: 15px 0;
+  span {
+    margin-right: 24px;
+  }
+  a {
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(17px);
+    padding: 6px 15px;
+    color: $buttonBg;
+    border: 1px solid $buttonBg;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 5px 0 0;
+    display: inline-block;
+    &:hover {
+      border-color: $buttonBg;
+      background-color: $buttonBg;
+      color: $white;
+      svg {
+        path {
+          stroke: $white;
+        }
+      }
+    }
+  }
+  svg {
+    transform: translateY(1px);
+    path {
+      stroke: $buttonBg;
+    }
+  }
 }
 
 .comments__textarea {
