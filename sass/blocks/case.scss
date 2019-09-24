@@ -17,7 +17,7 @@
 }
 
 .case__item {
-  width: 250px;
+  //width: 250px;
   background: $white;
   box-shadow: $boxShadow;
   border-radius: 10px;
@@ -141,7 +141,7 @@ p.case__text {
 
 @media (min-width: 480px) {
   .case__item {
-    width: 400px;
+    //width: 400px;
   }
 }
 
@@ -158,7 +158,7 @@ p.case__text {
   }
   .case__item {
     display: flex;
-    width: 555px;
+    //width: 555px;
   }
   .case__right {
     order: -1;
@@ -227,7 +227,7 @@ p.case__text {
     line-height: px-to-rem(48px);
   }
   .case__item {
-    width: auto;
+    //width: auto;
   }
 }
 
