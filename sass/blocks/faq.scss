@@ -17,9 +17,6 @@
   p {
     margin: 0;
   }
-  &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8) {
-    display: none;
-  }
 }
 
 .faq__link {
@@ -79,19 +76,6 @@
   .faq__title {
     font-size: px-to-rem(28px);
     line-height: px-to-rem(34px);
-  }
-  .faq__item {
-    flex-basis: 31%;
-    margin-right: 3.5% !important;
-    &:nth-child(5), &:nth-child(6) {
-      display: block;
-    }
-    &:nth-child(odd) {
-      margin-right: 0;
-    }
-    &:nth-child(3n + 3) {
-      margin-right: 0 !important;
-    }
   }
 }
 

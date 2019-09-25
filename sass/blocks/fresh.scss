@@ -26,18 +26,16 @@
 
 .fresh__item {
   margin: 20px 0;
-  &:nth-child(4) {
-    display: none;
-  }
 }
 
 @media (min-width: 640px) {
   .fresh__block {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .fresh__item {
-    flex-basis: 32%;
+    flex-basis: 48%;
     margin: 10px 0;
   }
 }
@@ -59,8 +57,5 @@
   }
   .fresh__item {
     flex-basis: 24%;
-    &:nth-child(4) {
-      display: block;
-    }
   }
 }

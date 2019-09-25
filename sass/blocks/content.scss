@@ -12,6 +12,16 @@
   margin: 20px 0;
 }
 
+.content--internal {
+  margin-top: 20px;
+  .content__left {
+    order: 1;
+  }
+  .content__right {
+    order: 2;
+  }
+}
+
 p.content__preview {
   color: $gray;
   font-size: px-to-rem(12px);
@@ -221,6 +231,10 @@ a.content__link--dashed {
 .content__information {
   display: flex;
   margin: 20px 0;
+}
+
+.content__matter-theme {
+  margin-top: 0;
 }
 
 .content__author {

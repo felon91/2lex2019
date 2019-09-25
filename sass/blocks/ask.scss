@@ -27,9 +27,6 @@
 
 .ask__item {
   margin: 20px 0;
-  &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8) {
-    display: none;
-  }
 }
 
 .ask__name, .ask__comments {
