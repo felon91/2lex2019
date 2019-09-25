@@ -29,7 +29,7 @@
 }
 
 .menu__title {
-  font-size: px-to-rem(18px);
+  font-size: px-to-rem(17px);
   line-height: px-to-rem(22px);
   font-weight: 600;
   color: $primary;
@@ -47,7 +47,7 @@
 .menu__btn {
   @include btn();
   margin: 10px 0;
-  font-size: px-to-rem(18px);
+  font-size: px-to-rem(17px);
   line-height: px-to-rem(22px);
   padding-left: 25px;
   padding-right: 35px;
@@ -64,7 +64,7 @@
   border-radius: 10px;
   display: flex;
   button {
-    font-size: px-to-rem(18px);
+    font-size: px-to-rem(17px);
     line-height: px-to-rem(22px);
     color: $primary;
     padding: 4px 0;
@@ -109,7 +109,7 @@
 }
 
 .menu__sub-item, .menu__right {
-  font-size: px-to-rem(18px);
+  font-size: px-to-rem(17px);
   line-height: px-to-rem(22px);
   font-weight: 600;
   .menu__link {
@@ -229,7 +229,7 @@
     display: flex;
     .menu__link {
       text-decoration: none;
-      font-size: px-to-rem(18px);
+      font-size: px-to-rem(17px);
       line-height: px-to-rem(22px);
       padding: 9px 10px 6px;
       display: inline-block;
@@ -397,7 +397,7 @@
     max-width: 250px;
   }
   .menu__text {
-    font-size: px-to-rem(18px);
+    font-size: px-to-rem(17px);
     line-height: px-to-rem(22px);
   }
   .menu__btn {

@@ -5,7 +5,7 @@
 }
 
 p.form-article__title {
-  font-size: px-to-rem(18px);
+  font-size: px-to-rem(17px);
   line-height: px-to-rem(22px);
   font-weight: 600;
   margin: 15px 0;
@@ -27,7 +27,7 @@ p.form-article__title {
     background: $white;
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    font-size: px-to-rem(18px);
+    font-size: px-to-rem(17px);
     line-height: px-to-rem(22px);
     padding: 10px 15px 10px 19px;
     appearance: none;
@@ -144,7 +144,7 @@ p.form-article__title {
     line-height: px-to-rem(38px);
   }
   .form-article__text {
-    font-size: px-to-rem(18px);
+    font-size: px-to-rem(17px);
     line-height: px-to-rem(22px);
     br {
       display: none;
