@@ -104,7 +104,7 @@ $(document).ready(function () {
   function t602_init() {
     var t602_lastCall, t602_timeoutId, t602_interval = 100;
     $(window).scroll(function () {
-      var t602_now = new Date().getTime();
+      let t602_now = new Date().getTime();
       if (t602_lastCall && t602_now < (t602_lastCall + t602_interval)) {
         clearTimeout(t602_timeoutId);
         t602_timeoutId = setTimeout(function () {
@@ -119,9 +119,9 @@ $(document).ready(function () {
   }
 
   function t602_setProgressBarWidth(recid) {
-    var t602_windowScrollTop = $(window).scrollTop(), t602_docHeight = $(document).height(),
-        t602_winHeight = $(window).height();
-    t602_scrollPercent = (t602_windowScrollTop / (t602_docHeight - t602_winHeight)) * 100;
+    let t602_windowScrollTop = $(window).scrollTop(), t602_docHeight = $(document).height(),
+        t602_winHeight = $(window).height(),
+        t602_scrollPercent = (t602_windowScrollTop / (t602_docHeight - t602_winHeight)) * 100;
     $(".header__indicator").css('width', t602_scrollPercent + '%');
   }
 
