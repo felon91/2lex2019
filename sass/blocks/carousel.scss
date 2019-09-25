@@ -38,6 +38,7 @@
         display: block;
         fill: $buttonBg;
         margin-left: auto;
+        filter: drop-shadow(0 0 4px rgba(0, 0, 0, .25));
       }
       &:hover {
         .arrow {
