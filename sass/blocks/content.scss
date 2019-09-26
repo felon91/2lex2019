@@ -150,6 +150,14 @@ p.content__preview {
   }
 }
 
+.content__img-news {
+  margin: 0 0 15px;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
 .content__file {
   margin: 15px 0;
 }
@@ -298,6 +306,13 @@ a.content__link--dashed {
 }
 
 @media (min-width: 560px) {
+  .content__img-news--left {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 7px;
+    margin-bottom: 0;
+  }
   .content__img--left {
     width: 220px;
     float: left;
@@ -414,6 +429,9 @@ a.content__link--dashed {
     p {
       margin: 20px 0 30px;
     }
+  }
+  .content__img-news--left {
+    width: 370px;
   }
   .content__btn {
     margin: 30px auto;

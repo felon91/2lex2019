@@ -1,0 +1,27 @@
+.news__date {
+  margin: 5px 0 15px;
+  p {
+    color: $gray;
+    font-size: px-to-rem(10px);
+    line-height: px-to-rem(12px);
+    margin: 0;
+  }
+}
+
+@media (min-width: 580px) {
+  .news__date {
+    p {
+      font-size: px-to-rem(12px);
+      line-height: px-to-rem(14px);
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .news__date {
+    p {
+      font-size: px-to-rem(14px);
+      line-height: px-to-rem(17px);
+    }
+  }
+}
