@@ -137,6 +137,17 @@ ol.table-of-contents__list {
         }
       }
     }
+    li.table-of-contents__element--active {
+      &::after {
+        display: block;
+      }
+      a {
+        color: $buttonBgHover;
+        &:active {
+          color: $buttonBgActive;
+        }
+      }
+    }
   }
   p.table-of-contents__title {
     padding-left: 35px;

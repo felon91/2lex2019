@@ -24,8 +24,8 @@
 
 p.content__preview {
   color: $gray;
-  font-size: px-to-rem(12px);
-  line-height: px-to-rem(18px);
+  font-size: px-to-rem(15px);
+  line-height: px-to-rem(24px);
   margin-top: 15px;
 }
 
@@ -233,7 +233,7 @@ a.content__link--dashed {
   margin: 20px 0;
 }
 
-.content__matter-theme {
+div.content__matter-theme {
   margin-top: 0;
 }
 
@@ -261,8 +261,8 @@ a.content__link--dashed {
 
 @media (min-width: 480px) {
   p.content__preview {
-    font-size: px-to-rem(14px);
-    line-height: px-to-rem(22px);
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(24px);
   }
   .content__comments {
     a {

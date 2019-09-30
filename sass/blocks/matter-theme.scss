@@ -1,3 +1,7 @@
+.matter-theme {
+  padding-top: 1px;
+}
+
 p.matter-theme__title {
   font-size: px-to-rem(28px);
   line-height: px-to-rem(35px);
@@ -83,6 +87,9 @@ a.matter-theme__more {
 
 a.matter-theme__more--all {
   display: none;
+  span {
+    border-bottom-style: solid;
+  }
 }
 
 .matter-theme__links {

@@ -91,6 +91,7 @@
 
 .header__button {
   @include btn();
+  font-weight: 400;
 }
 
 .header__button--top {

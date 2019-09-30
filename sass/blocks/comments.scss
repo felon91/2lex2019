@@ -74,6 +74,25 @@ p.comments__title {
   }
 }
 
+.comments__textarea--child {
+  padding-bottom: 60px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: $white;
+  textarea {
+    height: 90px;
+  }
+  .comments__cancel, .comments__submit {
+    display: block;
+    max-width: 110px;
+    padding: 5px 0;
+  }
+  .comments__cancel {
+    padding: 4px 0;
+    right: 130px;
+  }
+}
+
 .comments__cancel {
   max-width: 135px;
   font-size: px-to-rem(17px);
@@ -239,6 +258,9 @@ li.comments__item {
     textarea {
       font-size: px-to-rem(16px);
     }
+  }
+  .comments__textarea--child {
+    margin-bottom: 15px;
   }
   .comments__author {
     p {

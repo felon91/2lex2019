@@ -127,6 +127,28 @@ $(document).ready(function () {
 
   t602_init();
   $('.table-of-contents__title').on('click', function() {
-    $('.table-of-contents').addClass('table-of-contents--active');
+    $('.table-of-contents').toggleClass('table-of-contents--active');
+  });
+
+  $('.table-of-contents').onePageNav({
+    currentClass: 'table-of-contents__element--active'
+  });
+
+  $('.airSticky').airStickyBlock({
+    debug: false,
+    stopBlock: '.airSticky_stop-block',
+    offsetTop: 60
+  });
+
+  $('.comments__answer').on('click', function (e) {
+    e.preventDefault();
+    $('.comments__textarea--child').remove();
+    let html = `<div class="comments__textarea comments__textarea--child">
+                  <textarea name="text" placeholder="Написать комментарий..."></textarea>
+                  <button class="comments__cancel">Отмена</button>
+                  <button class="comments__submit">Отправить</button>
+                </div>`;
+    $(this).after(html);
   })
+
 });

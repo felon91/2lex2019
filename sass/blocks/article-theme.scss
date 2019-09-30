@@ -1,5 +1,6 @@
 .article-theme {
   background: $grayBlock;
+  border-radius: 10px;
   img {
     width: 100%;
     border-radius: 10px 10px 0 0;
@@ -26,8 +27,8 @@ a.article-theme__link {
 }
 
 .article-theme__title {
-  font-size: px-to-rem(14px);
-  line-height: px-to-rem(16px);
+  font-size: px-to-rem(15px);
+  line-height: px-to-rem(18px);
   color: $buttonBg;
   display: block;
   margin: 10px 15px;

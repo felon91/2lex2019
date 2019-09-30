@@ -1,6 +1,7 @@
 .turn {
   background-color: $grayBlock;
   border-radius: 10px;
+  box-shadow: $boxShadow;
 }
 
 p.turn__title {
@@ -19,8 +20,8 @@ p.turn__title {
 
 .turn__item {
   margin: 0 0 15px 0;
-  font-size: px-to-rem(14px);
-  line-height: px-to-rem(18px);
+  font-size: px-to-rem(15px);
+  line-height: px-to-rem(20px);
   a {
     border-bottom: none;
   }
