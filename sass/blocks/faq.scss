@@ -3,6 +3,14 @@
   border-radius: 10px;
 }
 
+.faq--internal {
+  border-radius: 0;
+}
+
+.faq__wrap {
+  margin: 20px 0;
+}
+
 .faq__title {
   font-size: px-to-rem(22px);
   line-height: px-to-rem(25px);
@@ -80,6 +88,14 @@
 }
 
 @media (min-width: 1170px) {
+  .faq--internal {
+    background-color: $second;
+    margin: 30px 0;
+    padding: 10px 15px 20px;
+    .faq__wrap {
+      margin: 0 auto;
+    }
+  }
   .faq__title {
     font-size: px-to-rem(32px);
     line-height: px-to-rem(38px);

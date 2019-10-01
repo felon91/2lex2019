@@ -131,11 +131,6 @@ ol.table-of-contents__list {
           }
         }
       }
-      &:hover {
-        &::after {
-          display: block;
-        }
-      }
     }
     li.table-of-contents__element--active {
       &::after {

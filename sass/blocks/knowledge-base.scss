@@ -3,6 +3,11 @@
   border-radius: 50px 0;
 }
 
+.knowledge-base--internal {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
 .knowledge-base__wrap {
   padding-top: 10px;
 }
@@ -63,6 +68,10 @@
 }
 
 @media (min-width: 680px) {
+  .knowledge-base--internal {
+    margin-bottom: -30px;
+    border-radius: 50px 0 0 0;
+  }
   .knowledge-base__wrap {
     padding-bottom: 10px;
   }
@@ -76,6 +85,11 @@
 }
 
 @media (min-width: 1170px) {
+  .knowledge-base--internal {
+    background: none;
+    border-radius: 0;
+    margin-top: 0;
+  }
   .knowledge-base__title {
     font-size: px-to-rem(40px);
     line-height: px-to-rem(48px);

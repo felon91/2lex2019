@@ -79,6 +79,22 @@ p, ul, ol, h1, h2, h3, h4, h5, h6 {
   margin: 50px 0;
 }
 
+.sticky-wrapper {
+  height: 60px !important;
+}
+
+@media (min-width: 480px) {
+  .sticky-wrapper {
+    height: 81px !important;
+  }
+}
+
+@media (min-width: 780px) {
+  .sticky-wrapper {
+    height: 176px !important;
+  }
+}
+
 @media (min-width: 980px) {
   .container__stage {
     padding-bottom: 50px;

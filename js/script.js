@@ -149,6 +149,10 @@ $(document).ready(function () {
                   <button class="comments__submit">Отправить</button>
                 </div>`;
     $(this).after(html);
-  })
+  });
+
+  $('.comments__item').on('click', '.comments__textarea--child .comments__cancel', function (e) {
+    $(this).parents('.comments__textarea--child').remove();
+  });
 
 });

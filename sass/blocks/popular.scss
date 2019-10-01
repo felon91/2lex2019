@@ -3,6 +3,17 @@
   border-radius: 10px;
 }
 
+.popular--internal {
+  background-color: $second;
+  border-radius: 50px 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.popular__wrap {
+  margin: 30px auto 20px;
+}
+
 .popular__title {
   font-size: px-to-rem(22px);
   line-height: px-to-rem(25px);
@@ -93,6 +104,11 @@
 }
 
 @media (min-width: 1170px) {
+  .popular--internal {
+    background: none;
+    border-radius: 0;
+    padding: 0;
+  }
   .popular__title {
     font-size: px-to-rem(32px);
     line-height: px-to-rem(38px);
