@@ -97,6 +97,12 @@ $(document).ready(function () {
 
     }
   });
+  $('.questions__buttons').on('click', function (e) {
+    if (!$(e.target).hasClass('active')) {
+      $('.questions__buttons button').removeClass('active');
+      $(e.target).addClass('active');
+    }
+  });
   $('.mask').mask('+7 (999) 999-99-99');
 
   $('.header--sticky').sticky();
@@ -128,6 +134,10 @@ $(document).ready(function () {
   t602_init();
   $('.table-of-contents__title').on('click', function() {
     $('.table-of-contents').toggleClass('table-of-contents--active');
+  });
+
+  $('.filter__title').on('click', function() {
+    $('.filter__block').toggleClass('filter__block--active');
   });
 
   $('.table-of-contents').onePageNav({

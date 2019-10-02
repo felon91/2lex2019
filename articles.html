@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Заголовок</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <link rel="stylesheet" href="css/all.min.css" type="text/css"/>
+  <link rel="stylesheet" href="css/style.min.css" type="text/css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+<div class="container">
+  <header class="header header--internal header--sticky">
+    <div class="header__wrap wrap">
+      <div class="header__hamburger hamburger">
+        <svg class="hamburger__svg" width="19" height="16" viewBox="0 0 19 16" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <line x1="1.5" y1="1.5" x2="17.5" y2="1.5" stroke="#343951" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round"/>
+          <line x1="1.5" y1="7.83333" x2="17.5" y2="7.83333" stroke="#343951" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round"/>
+          <line x1="1.5" y1="14.1667" x2="17.5" y2="14.1667" stroke="#343951" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="header__logo">
+        <a href="#">
+          <img src="img/logo.png" alt="">
+        </a>
+      </div>
+      <div class="header__slogan">
+        <p>Избавляем от долгов<br> через банкротство физ. лиц</p>
+      </div>
+      <div class="header__info">
+        <p>
+          <a href="tel:88005515971">8 800 551 59 71</a>
+        </p>
+        <p>Звоните <span><b>бесплатно</b> и</span> круглосуточно</p>
+      </div>
+      <button class="header__button header__button--top">Узнать, как гарантированно избавиться от долгов</button>
+    </div>
+    <nav class="header__menu wrap menu">
+      <div class="menu__close">
+        <svg class="hamburger__svg hamburger__svg--active" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="18.1472" y1="17.2684" x2="3.00002" y2="2.12128" stroke="black" stroke-width="3" stroke-linecap="round"/>
+          <line x1="3" y1="17.3787" x2="18.1472" y2="2.23152" stroke="black" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="menu__mobile">
+        <button class="menu__button">Узнать, как гарантированно избавиться от долгов</button>
+        <div class="menu__switch">
+          <button data-type="right">Компания</button>
+          <button data-type="left" class="active">База знаний</button>
+        </div>
+      </div>
+      <div class="menu__list">
+        <div class="menu__left">
+          <div class="menu__item">
+            <a class="menu__link menu__link--hide" href="#">
+              База знаний
+              <svg class="menu__arrow" width="9" height="5" viewBox="0 0 9 5" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 0.712142C0.000623709 0.571138 0.04515 0.433454 0.127979 0.316401C0.210809 0.199348 0.328244 0.108149 0.465525 0.0542688C0.602806 0.000388626 0.753804 -0.0137684 0.899537 0.0135784C1.04527 0.0409252 1.17923 0.108555 1.28459 0.207966L4.52055 3.27594L7.75651 0.207966C7.90064 0.0908061 8.08604 0.0295851 8.27565 0.0365371C8.46527 0.0434891 8.64515 0.118102 8.77933 0.245466C8.91351 0.372829 8.99211 0.543562 8.99944 0.723546C9.00676 0.903531 8.94226 1.07951 8.81883 1.21632L5.05171 4.79204C4.91055 4.92524 4.71959 5 4.52055 5C4.3215 5 4.13055 4.92524 3.98938 4.79204L0.22226 1.21632C0.080772 1.08282 0.000841119 0.901504 0 0.712142Z"/>
+              </svg>
+            </a>
+            <div class="menu__sub">
+              <ul class="menu__sub-list">
+                <li class="menu__sub-item">Статьи</li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Пошаговое руководтство</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Финансовый управляющий</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Закон о банкротстве</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Последствия</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Стоимость банкротства</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Плюсы и минусы банкротсва</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Все статьи &#8594;</a>
+                </li>
+              </ul>
+              <ul class="menu__sub-list">
+                <li class="menu__sub-item">Вопросы</li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Можно ли выезать за границу?</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Можно взять кредит после банкротства?</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Отразится ли на мне банкротство супруга?</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Что будет с моей квартирой?</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Как сохранить машину?</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a class="menu__link" href="#">Все вопросы &#8594;</a>
+                </li>
+              </ul>
+              <div class="menu__question">
+                <p class="menu__title">Задайте свой вопрос!</p>
+                <p class="menu__text">Ваш вопрос будет опубликован на сайте. Ответы будете на почту. Анонимно.</p>
+                <a class="menu__btn" href="#">Задать вопрос</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu__item">
+            <a class="menu__link menu__link--hide" href="#">
+              Свежие новости
+            </a>
+          </div>
+        </div>
+        <div class="menu__right">
+          <div class="menu__right-block">
+            <div class="menu__item">
+              <a class="menu__link" href="#">О нас</a>
+            </div>
+            <div class="menu__item">
+              <a class="menu__link" href="#">Услуги и стоимость</a>
+            </div>
+            <div class="menu__item">
+              <a class="menu__link" href="#">Дела</a>
+            </div>
+            <div class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </div>
+          </div>
+          <div class="menu__question">
+            <p class="menu__title">Задайте свой вопрос!</p>
+            <p class="menu__text">Ваш вопрос будет опубликован на сайте. Ответы будете на почту. Анонимно.</p>
+            <a class="menu__btn" href="#">Задать вопрос</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="header__indicator"></div>
+  </header>
+  <article class="article">
+    <div class="article__breadcrumbs breadcrumbs">
+      <p class="wrap">
+        <a href="#">Главная</a>
+        <span>
+        <img src="img/arrow-breadcrumbs.svg" alt="">
+      </span>
+        <a href="#">Статьи</a>
+        <span>
+        <img src="img/arrow-breadcrumbs.svg" alt="">
+      </span>
+        Процедура банкротства физических лиц
+      </p>
+    </div>
+    <div class="article__top">
+      <div class="article__wrap wrap">
+        <h1>Статьи по банкротству физических лиц</h1>
+        <p class="article__text">Текст для списка статей по опреденному тэгу или без него. Текста тут кстати может и не быть</p>
+      </div>
+    </div>
+    <div class="article__content content content--mt-30 wrap airSticky_stop-block">
+      <div class="content__left">
+        <div class="articles">
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article1.jpg" alt="">
+              <p><span>12 августа</span> Процедура банкротства физического лица: как пройти самостоятельно?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article2.jpg" alt="">
+              <p><span>5 августа</span> Списание долгов: как выйти из долговой кабалы?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article3.jpg" alt="">
+              <p><span>13 июля</span> Можно ли выезжать за границу во время процедуры банкротства и после нее?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article1.jpg" alt="">
+              <p><span>12 августа</span> Процедура банкротства физического лица: как пройти самостоятельно?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article2.jpg" alt="">
+              <p><span>5 августа</span> Списание долгов: как выйти из долговой кабалы?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article3.jpg" alt="">
+              <p><span>13 июля</span> Можно ли выезжать за границу во время процедуры банкротства и после нее?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article1.jpg" alt="">
+              <p><span>12 августа</span> Процедура банкротства физического лица: как пройти самостоятельно?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article2.jpg" alt="">
+              <p><span>5 августа</span> Списание долгов: как выйти из долговой кабалы?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article3.jpg" alt="">
+              <p><span>13 июля</span> Можно ли выезжать за границу во время процедуры банкротства и после нее?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article1.jpg" alt="">
+              <p><span>12 августа</span> Процедура банкротства физического лица: как пройти самостоятельно?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article2.jpg" alt="">
+              <p><span>5 августа</span> Списание долгов: как выйти из долговой кабалы?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article3.jpg" alt="">
+              <p><span>13 июля</span> Можно ли выезжать за границу во время процедуры банкротства и после нее?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article1.jpg" alt="">
+              <p><span>12 августа</span> Процедура банкротства физического лица: как пройти самостоятельно?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article2.jpg" alt="">
+              <p><span>5 августа</span> Списание долгов: как выйти из долговой кабалы?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article3.jpg" alt="">
+              <p><span>13 июля</span> Можно ли выезжать за границу во время процедуры банкротства и после нее?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article1.jpg" alt="">
+              <p><span>12 августа</span> Процедура банкротства физического лица: как пройти самостоятельно?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article2.jpg" alt="">
+              <p><span>5 августа</span> Списание долгов: как выйти из долговой кабалы?</p>
+            </a>
+          </div>
+          <div class="articles__item">
+            <a class="articles__link" href="#">
+              <img src="img/article3.jpg" alt="">
+              <p><span>13 июля</span> Можно ли выезжать за границу во время процедуры банкротства и после нее?</p>
+            </a>
+          </div>
+        </div>
+        <a class="content__show-more" href="#">Показать еще &#8595;</a>
+        <ul class="content__pagination pagination">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--left" href="#"></a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">4</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">5</a>
+          </li>
+          <li class="pagination__item pagination__item--dotted">
+            ...
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">10</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--right" href="#"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="content__right content__filter">
+        <div class="filter airSticky">
+          <p class="filter__title"><span>Фильтр по темам</span></p>
+          <div class="filter__block">
+            <p>
+              <a href="#">списание долгов</a>
+            </p>
+            <p>
+              <a href="#">реализация имущества</a>
+            </p>
+            <p>
+              <a href="#">длинная тема чтобы была на 2 строки</a>
+            </p>
+            <p>
+              <a href="#">реализация имущества</a>
+            </p>
+            <p>
+              <a href="#">списание долгов</a>
+            </p>
+            <p>
+              <a href="#">длинная тема чтобы была на 2 строки</a>
+            </p>
+            <p>
+              <a href="#">списание долгов</a>
+            </p>
+            <p>
+              <a href="#">реализация имущества</a>
+            </p>
+            <p>
+              <a href="#">длинная тема чтобы была на 2 строки</a>
+            </p>
+            <a class="filter__more" href="#"><span>Еще 9</span>
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.29572 1L4.53125 2.76465L6.29572 4.5293" stroke="#03A9F4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.00098 2.76465C8.76181 2.76465 11.001 5.00382 11.001 7.76465C11.001 10.5255 8.76181 12.7646 6.00098 12.7646C3.24014 12.7646 1.00098 10.5255 1.00098 7.76465" stroke="#03A9F4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <div class="form form--gray form--leaf form--last">
+    <div class="wrap">
+      <p class="form-article__title">Нужна помощь в списании долгов?</p>
+      <p class="form-article__text">Оставьте свой телефон, наш юрист перезвонит Вам через 1 минуту и поможет разобраться.<br> <b>Это бесплатно.</b></p>
+      <form>
+        <div class="form-article__block">
+          <div class="form-article__input">
+            <input type="text" name="name" placeholder="Имя">
+          </div>
+          <div class="form-article__input">
+            <input class="mask" type="tel" name="phone" placeholder="Телефон">
+          </div>
+          <div class="form-article__button">
+            <button type="submit">Жду звонка</button>
+          </div>
+        </div>
+        <div class="form-article__conf">
+          <input id="conf" type="checkbox" name="conf" value="check" checked>
+          <label for="conf">Я принимаю условия <a href="#">Пользовательского соглашения</a> и даю свое согласие на обработку моих персональных данных в соответствии с <a href="#">Политикой конфиденциальности</a></label>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__wrap wrap">
+      <div class="footer__left">
+        <img src="img/footer-logo.png" alt="">
+        <p>Банкротство физических лиц, списание долгов</p>
+        <p><a href="#">Правовая информация</a></p>
+        <p>&copy; ООО «Правовые решения», 2015-2019</p>
+      </div>
+      <div class="footer__center">
+        <ul class="footer__menu">
+          <li>
+            <a href="#">Статьи</a>
+          </li>
+          <li>
+            <a href="#">Вопросы</a>
+          </li>
+          <li>
+            <a href="#">Закон</a>
+          </li>
+        </ul>
+        <ul class="footer__menu">
+          <li>
+            <a href="#">О нас</a>
+          </li>
+          <li>
+            <a href="#">Услуги</a>
+          </li>
+          <li>
+            <a href="#">Цены</a>
+          </li>
+          <li>
+            <a href="#">Выигранные дела</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__right">
+        <p class="footer__phone">
+          <a href="tel:88005515971">8 800 551 59 71</a><br>
+          Звоните <b>бесплатно</b><br> и круглосуточно
+        </p>
+        <div class="footer__socials socials">
+          <p class="socials__title">Присоединяйтесь к нам:</p>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="#">
+                <svg width="32" height="32" viewBox="0 0 32 32">
+                  <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" />
+                  <path d="M17.7306 19.6269L20.1217 21.9352C20.6115 22.4071 20.6115 23.1734 20.1217 23.6457C19.6324 24.1181 18.8393 24.1181 18.3504 23.6457L15.9995 21.3774L13.6506 23.6457C13.4057 23.8817 13.0848 23.9997 12.7638 23.9997C12.4434 23.9997 12.123 23.8817 11.8781 23.6457C11.3888 23.1734 11.3888 22.4076 11.8776 21.9352L14.2689 19.6269C13.3983 19.4354 12.5586 19.1024 11.7852 18.634C11.1999 18.2778 11.0241 17.5315 11.3929 16.966C11.7606 16.3998 12.534 16.2293 13.1204 16.5855C14.8714 17.6488 17.1271 17.649 18.8792 16.5855C19.4655 16.2293 20.2387 16.3998 20.6072 16.966C20.976 17.531 20.7997 18.2778 20.2144 18.634C19.4409 19.1029 18.6013 19.4354 17.7306 19.6269Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7119 12.1291C11.7119 14.4053 13.6303 16.2569 15.9892 16.2569C18.3486 16.2569 20.2665 14.4053 20.2665 12.1291C20.2665 9.85207 18.3486 8 15.9892 8C13.6303 8 11.7119 9.85207 11.7119 12.1291ZM17.7602 12.1291C17.7602 11.1863 16.9658 10.4198 15.9892 10.4198C15.0134 10.4198 14.2182 11.1863 14.2182 12.1291C14.2182 13.071 15.0134 13.8381 15.9892 13.8381C16.9658 13.8381 17.7602 13.071 17.7602 12.1291Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#">
+                <svg width="32" height="32" viewBox="0 0 32 32">
+                  <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" />
+                  <path d="M16.8369 21.2507C16.8369 21.2507 17.1449 21.2171 17.3026 21.0507C17.4471 20.8983 17.442 20.6107 17.442 20.6107C17.442 20.6107 17.4228 19.2678 18.0581 19.0695C18.6841 18.8745 19.488 20.3682 20.3411 20.9426C20.9855 21.3768 21.4746 21.2818 21.4746 21.2818L23.7543 21.2507C23.7543 21.2507 24.9463 21.1786 24.3812 20.2584C24.3344 20.183 24.0514 19.5775 22.6867 18.3337C21.2568 17.0317 21.4488 17.2423 23.17 14.9899C24.2184 13.6182 24.6374 12.7808 24.5064 12.4228C24.382 12.0803 23.6107 12.1712 23.6107 12.1712L21.0447 12.1868C21.0447 12.1868 20.8544 12.1614 20.7134 12.2442C20.5756 12.3253 20.4863 12.5145 20.4863 12.5145C20.4863 12.5145 20.0806 13.5756 19.5389 14.4786C18.3961 16.3828 17.9395 16.4836 17.7526 16.3656C17.3177 16.0895 17.4262 15.2578 17.4262 14.667C17.4262 12.821 17.7117 12.0516 16.8711 11.8525C16.5923 11.7861 16.3869 11.7427 15.6732 11.7353C14.7575 11.7263 13.9829 11.7386 13.5438 11.9492C13.2517 12.0893 13.0263 12.4023 13.164 12.4203C13.3335 12.4424 13.7175 12.5219 13.9211 12.794C14.1841 13.1455 14.1749 13.9337 14.1749 13.9337C14.1749 13.9337 14.326 16.1067 13.8218 16.3762C13.4762 16.5614 13.0021 16.1837 11.9829 14.4556C11.4612 13.5707 11.0672 12.5924 11.0672 12.5924C11.0672 12.5924 10.9912 12.4097 10.8552 12.3113C10.6907 12.1925 10.4612 12.1557 10.4612 12.1557L8.02293 12.1712C8.02293 12.1712 7.65649 12.1811 7.52209 12.3376C7.40273 12.476 7.51291 12.7636 7.51291 12.7636C7.51291 12.7636 9.42194 17.1481 11.5839 19.3579C13.5664 21.3834 15.8168 21.2507 15.8168 21.2507H16.8369Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#">
+                <svg width="32" height="32" viewBox="0 0 32 32">
+                  <path d="M32 16C32 7.1625 24.8375 0 16 0C7.1625 0 0 7.1625 0 16C0 23.9875 5.85 30.6062 13.5 31.8062V20.625H9.4375V16H13.5V12.475C13.5 8.46562 15.8875 6.25 19.5438 6.25C21.2938 6.25 23.125 6.5625 23.125 6.5625V10.5H21.1063C19.1188 10.5 18.5 11.7344 18.5 13V16H22.9375L22.2281 20.625H18.5V31.8062C26.15 30.6062 32 23.9875 32 16Z" />
+                  <path d="M22.2281 20.625L22.9375 16H18.5V13C18.5 11.7344 19.1188 10.5 21.1063 10.5H23.125V6.5625C23.125 6.5625 21.2938 6.25 19.5438 6.25C15.8875 6.25 13.5 8.46563 13.5 12.475V16H9.4375V20.625H13.5V31.8062C14.3156 31.9344 15.15 32 16 32C16.85 32 17.6844 31.9344 18.5 31.8062V20.625H22.2281Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="js/all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+</html>

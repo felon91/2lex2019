@@ -1,0 +1,70 @@
+ul.pagination {
+  display: flex;
+  background: none;
+  justify-content: center;
+  li.pagination__item {
+    width: 25px;
+    margin: 0 3px;
+    text-align: center;
+    color: $buttonBg;
+    padding-left: 0;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+a.pagination__link {
+  border-bottom: none;
+  width: 25px;
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(25px);
+  border-radius: 50%;
+  color: $buttonBg;
+  display: block;
+  text-align: center;
+  &:hover {
+    background-color: $buttonBg;
+    color: $white;
+  }
+}
+
+a.pagination__link--active {
+  background-color: $buttonBg;
+  color: $white;
+}
+
+a.pagination__link--left {
+  height: 100%;
+  background: url(#{$imgPath}pagination-arrow.svg) no-repeat center;
+  transform: scale(-1, -1);
+  &:hover {
+    background-color: initial;
+  }
+}
+
+a.pagination__link--right {
+  height: 100%;
+  background: url(#{$imgPath}pagination-arrow.svg) no-repeat center;
+  &:hover {
+    background-color: initial;
+  }
+}
+
+@media (min-width: 780px) {
+  ul.pagination {
+    li.pagination__item {
+      width: 36px;
+    }
+    li.pagination__item--dotted {
+      align-self: flex-end;
+      margin-bottom: 5px;
+    }
+  }
+  a.pagination__link {
+    width: 36px;
+    line-height: px-to-rem(36px);
+    font-size: px-to-rem(18px);
+
+  }
+}

@@ -102,6 +102,12 @@
   }
 }
 
+p.article__text {
+  font-size: px-to-rem(12px);
+  line-height: px-to-rem(14px);
+  color: $gray;
+}
+
 .article__breadcrumbs {
   background-color: $second;
   padding-top: 1px;

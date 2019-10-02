@@ -1,0 +1,83 @@
+.filter {
+  background: $grayBlock;
+  box-shadow: $boxShadow;
+  border-radius: 10px;
+  position: relative;
+}
+
+p.filter__title {
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(20px);
+  color: $black;
+  padding: 10px 20px 10px 30px;
+  background-color: $white;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  span {
+    padding-right: 20px;
+    background: url(#{$imgPath}table-of-content-arrow.svg) right center no-repeat;
+  }
+}
+
+.filter__block {
+  padding: 10px 30px;
+  display: none;
+  p {
+    margin: 5px 0;
+  }
+  a {
+    border: none;
+    color: $black;
+    &:hover {
+      color: $buttonBgHover;
+    }
+    &:active {
+      color: $buttonBgActive;
+    }
+  }
+}
+
+.filter__block--active {
+  display: block;
+}
+
+a.filter__more {
+  text-decoration: none;
+  color: $buttonBg;
+  font-size: px-to-rem(17px);
+  line-height: px-to-rem(22px);
+  margin: 10px 0;
+  display: inline-block;
+  border-bottom: none;
+  span {
+    border-bottom: 1px dashed $buttonBg;
+  }
+  &:hover {
+    color: $buttonBgHover;
+    span {
+      border-bottom-color: $buttonBgHover;
+    }
+  }
+  &:active {
+    color: $buttonBgActive;
+    border-bottom-color: $buttonBgActive;
+  }
+}
+
+@media (min-width: 780px) {
+  p.filter__title {
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(22px);
+  }
+}
+
+@media (min-width: 1170px) {
+  .filter__block {
+    display: block;
+    a {
+      font-size: px-to-rem(18px);
+      line-height: px-to-rem(20px);
+    }
+  }
+}
