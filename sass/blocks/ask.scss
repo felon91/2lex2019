@@ -31,6 +31,9 @@
 
 .ask__item {
   margin: 20px 0;
+  p {
+    margin: 0;
+  }
 }
 
 .ask__name, .ask__comments {
@@ -78,11 +81,6 @@
     font-size: px-to-rem(28px);
     line-height: px-to-rem(34px);
   }
-  .ask__item {
-    &:nth-child(5), &:nth-child(6) {
-      display: block;
-    }
-  }
 }
 
 @media (min-width: 1170px) {
@@ -105,9 +103,6 @@
   }
   .ask__item {
     flex-basis: 50%;
-    margin: 5px 0;
-    &:nth-child(7), &:nth-child(8) {
-      display: block;
-    }
+    margin: 20px 0;
   }
 }
