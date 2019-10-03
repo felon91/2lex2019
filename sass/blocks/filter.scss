@@ -76,8 +76,9 @@ a.filter__more {
   .filter__block {
     display: block;
     a {
-      font-size: px-to-rem(18px);
+      font-size: px-to-rem(17px);
       line-height: px-to-rem(20px);
+      display: inline-block;
     }
   }
 }

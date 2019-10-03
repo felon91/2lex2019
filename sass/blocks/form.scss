@@ -7,6 +7,11 @@
 
 .form--internal {
   margin: 20px 0 30px;
+  .form__input {
+    input {
+      background-color: $grayBlock;
+    }
+  }
 }
 
 .form--last {
@@ -183,6 +188,14 @@
 
     .form__title {
       margin-top: 20px;
+    }
+  }
+
+  .form--internal {
+    .form__input {
+      input {
+        background-color: $white;
+      }
     }
   }
 }
