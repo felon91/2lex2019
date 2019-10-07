@@ -253,6 +253,10 @@ div.content__filter {
   margin-top: 0;
 }
 
+div.content__other-services {
+  margin: 20px 0;
+}
+
 .content__author {
   display: flex;
   align-items: center;
@@ -515,6 +519,9 @@ ul.content__pagination {
     }
   }
   div.content__lattest-news {
+    margin-top: 0;
+  }
+  div.content__other-services {
     margin-top: 0;
   }
 }
