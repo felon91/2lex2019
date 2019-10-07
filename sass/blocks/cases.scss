@@ -1,63 +1,4 @@
 .cases {
-
-}
-
-.cases__item {
-  margin: 0 0 20px 0;
-  img {
-    display: block;
-    width: 100%;
-    margin-bottom: 5px;
-  }
-  &:not(:first-child) {
-    img {
-      display: none;
-    }
-  }
-}
-
-a.cases__link {
-  display: block;
-  border-bottom: none;
-  p {
-    font-size: px-to-rem(16px);
-    line-height: px-to-rem(19px);
-    margin-bottom: 0;
-    margin-top: 5px;
-    span {
-      color: $gray;
-      font-size: px-to-rem(12px);
-      line-height: px-to-rem(14px);
-    }
-  }
-  &:hover {
-    p {
-      color: $buttonBgHover;
-    }
-  }
-  &:active {
-    p {
-      color: $buttonBgActive;
-    }
-  }
-}
-
-@media (min-width: 980px) {
-  .cases {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .cases__item {
-    flex-basis: 49%;
-    margin: 0;
-    &:nth-child(odd) {
-      margin-right: 2%;
-    }
-  }
-}
-
-.cases {
   img.cases__img {
     max-width: 100%;
     width: auto;
@@ -79,7 +20,7 @@ a.cases__link {
   background: $white;
   box-shadow: $boxShadow;
   border-radius: 10px;
-  margin: 15px 10px;
+  margin: 30px 10px;
   position: relative;
 }
 
@@ -194,6 +135,61 @@ a.cases__link {
     color: $buttonBgActive;
     span {
       border-bottom-color: $buttonBgActive;
+    }
+  }
+}
+
+.cases__item {
+  margin: 0 0 30px 0;
+  img {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  &:not(:first-child) {
+    img {
+      display: none;
+    }
+  }
+}
+
+a.cases__link {
+  display: block;
+  border-bottom: none;
+  p {
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(19px);
+    margin-bottom: 0;
+    margin-top: 5px;
+    span {
+      color: $gray;
+      font-size: px-to-rem(12px);
+      line-height: px-to-rem(14px);
+    }
+  }
+  &:hover {
+    p {
+      color: $buttonBgHover;
+    }
+  }
+  &:active {
+    p {
+      color: $buttonBgActive;
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .cases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cases__item {
+    flex-basis: 49%;
+    margin: 12px 0;
+    &:nth-child(odd) {
+      margin-right: 2%;
     }
   }
 }
