@@ -1,0 +1,23 @@
+.garanty {
+  background: url(#{$imgPath}leaf.png) center top no-repeat $second;
+  border-radius: 10px;
+  padding: 35px 25px 15px 25px;
+  p {
+    a {
+      border-bottom: none;
+    }
+  }
+}
+
+p.garanty__title {
+  font-size: px-to-rem(22px);
+  line-height: px-to-rem(26px);
+  font-weight: 600;
+}
+
+@media (min-width: 780px) {
+  p.garanty__title {
+    font-size: px-to-rem(24px);
+    line-height: px-to-rem(29px);
+  }
+}
