@@ -232,6 +232,9 @@ p.article__text {
       line-height: px-to-rem(17px);
     }
   }
+  p.article__text {
+    margin-top: -10px;
+  }
 }
 
 @media (min-width: 780px) {
@@ -319,6 +322,9 @@ p.article__text {
     flex-basis: auto;
     flex-grow: 1;
   }
+  p.article__text {
+    margin-top: -10px;
+  }
 }
 
 @media (min-width: 1170px) {
@@ -360,5 +366,8 @@ p.article__text {
   }
   .article__content {
     margin-top: 15px;
+  }
+  p.article__text {
+    margin-top: -10px;
   }
 }

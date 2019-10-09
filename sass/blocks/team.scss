@@ -12,6 +12,13 @@ ul.team__list {
     box-shadow: $boxShadow;
     margin: 25px 0;
     background-color: $grayBlock;
+    overflow: hidden;
+    &:hover {
+      box-shadow: $boxShadowHover;
+      .team__img {
+        transform: scale(1.05);
+      }
+    }
     &::after {
       display: none;
     }
@@ -28,6 +35,8 @@ ul.team__list {
 .team__img {
   width: 100%;
   border-radius: 10px 10px 0 0;
+  transition-property: transform;
+  transition-duration: 500ms;
 }
 
 .team__info {

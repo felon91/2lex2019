@@ -4,6 +4,9 @@
   background-color: $white;
   padding: 20px;
   margin: 25px 0;
+  &:hover {
+    box-shadow: $boxShadowHover;
+  }
   p {
     font-size: px-to-rem(75px);
     line-height: px-to-rem(75px);
@@ -14,6 +17,10 @@
       font-size: px-to-rem(40px);
       line-height: px-to-rem(40px);
       margin-left: -10px;
+    }
+    .numbers__znak {
+      font-size: px-to-rem(50px);
+      line-height: px-to-rem(50px);
     }
     &:nth-child(2) {
       font-size: px-to-rem(42px);
@@ -44,6 +51,10 @@
         font-size: px-to-rem(26px);
         line-height: px-to-rem(26px);
       }
+      .numbers__znak {
+        font-size: px-to-rem(30px);
+        line-height: px-to-rem(30px);
+      }
       &:nth-child(2) {
         font-size: px-to-rem(22px);
         line-height: px-to-rem(22px);
@@ -68,6 +79,10 @@
         font-size: px-to-rem(40px);
         line-height: px-to-rem(40px);
         margin-left: -10px;
+      }
+      .numbers__znak {
+        font-size: px-to-rem(50px);
+        line-height: px-to-rem(50px);
       }
       &:nth-child(2) {
         font-size: px-to-rem(42px);
