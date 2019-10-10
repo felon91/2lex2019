@@ -1,0 +1,88 @@
+.way__title {
+  font-size: px-to-rem(30px);
+  line-height: px-to-rem(36px);
+  margin: 0 0 30px 0;
+  font-weight: 600;
+  color: $primary;
+}
+
+.way__buttons {
+  background: $grayBlock;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  margin: 30px 0;
+  max-width: 275px;
+  button {
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(22px);
+    color: $buttonBg;
+    padding: 8px 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    flex-basis: 50%;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+  }
+  .active {
+    background: $buttonBg;
+    color: $white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    padding: 6px 0;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+}
+
+.way__text {
+  font-size: px-to-rem(17px);
+  line-height: px-to-rem(22px);
+  p {
+    margin: 20px 0;
+  }
+}
+
+.way__img {
+  margin: 20px 0;
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+a.way__btn {
+  margin: 25px 0;
+  text-decoration: none;
+  @include btn();
+  display: block;
+  width: 100%;
+  background-image: none;
+  max-width: 280px;
+  text-align: center;
+  padding: 12px;
+  margin: 0;
+  font-size: px-to-rem(20px);
+  line-height: px-to-rem(24px);
+  font-weight: 600;
+}
+
+@media (max-width: 680px) {
+  .way__title {
+    font-size: px-to-rem(24px);
+    line-height: px-to-rem(30px);
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .way__buttons {
+    button {
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(19px);
+    }
+  }
+}

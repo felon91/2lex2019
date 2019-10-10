@@ -1,0 +1,60 @@
+.form-modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50%;
+  bottom: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -999;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  opacity: 0;
+  height: 100%;
+  transition-property: opacity;
+  transition-duration: 500ms;
+}
+
+.form-modal--active {
+  opacity: 1;
+  z-index: 9999;
+}
+
+.form-modal__block {
+  max-width: 940px;
+  width: calc(100% - 20px);
+  border-radius: 5px;
+  background-color: $white;
+  box-shadow: $boxShadow;
+  margin: 25px auto;
+  padding: 35px 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.form-modal__close {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.form-modal__center {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+}
+
+@media (max-width: 680px) {
+  .form-modal__block {
+    padding: 20px 15px;
+  }
+  .form-modal__close {
+    right: 10px;
+  }
+}

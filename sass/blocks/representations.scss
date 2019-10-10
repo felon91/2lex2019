@@ -1,0 +1,43 @@
+.representations {
+
+}
+
+.representations__title {
+  font-size: px-to-rem(30px);
+  line-height: px-to-rem(36px);
+  color: $primary;
+  font-weight: 600;
+  margin: 0 80px 20px 0;
+}
+
+.representations__city {
+  a {
+    text-decoration: none;
+    margin: 10px 20px 10px 0;
+    display: inline-block;
+    font-size: px-to-rem(20px);
+    line-height: px-to-rem(24px);
+    color: $buttonBg;
+    &:hover {
+      color: $buttonBgHover;
+    }
+    &:active {
+      color: $buttonBgActive;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .representations__title {
+    font-size: px-to-rem(24px);
+    line-height: px-to-rem(30px);
+    margin-right: 50px;
+  }
+  .representations__city {
+    a {
+      font-size: px-to-rem(17px);
+      line-height: px-to-rem(20px);
+      margin: 5px 10px 5px 0;
+    }
+  }
+}

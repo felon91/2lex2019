@@ -124,6 +124,12 @@ $(document).ready(function () {
       $(e.target).addClass('active');
     }
   });
+  $('.way__buttons').on('click', function (e) {
+    if (!$(e.target).hasClass('active')) {
+      $('.way__buttons button').removeClass('active');
+      $(e.target).addClass('active');
+    }
+  });
   $('.mask').mask('+7 (999) 999-99-99');
 
   $('.header--sticky').sticky();
@@ -203,5 +209,25 @@ $(document).ready(function () {
     });
   });
 
+  $('.container').on("click", '.contacts__office a', function (e) {
+    e.preventDefault();
+      $(".form-modal--office").addClass('form-modal--active');
+  });
+
+  $('.container').on("click", '.contacts__address a', function (e) {
+    e.preventDefault();
+      $(".form-modal--way").addClass('form-modal--active');
+  });
+
+  $('.container').on("click", '.form-modal__center', function (e) {
+    if ($(e.target).hasClass('form-modal__center')) {
+      $(".form-modal").removeClass('form-modal--active');
+    }
+  });
+
+  $('.container').on("click", '.form-modal__close', function (e) {
+    e.preventDefault();
+    $(".form-modal").removeClass('form-modal--active');
+  });
 
 });
