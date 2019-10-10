@@ -1,0 +1,132 @@
+.contacts-form {
+  margin: 30px 0 50px;
+}
+
+.contacts-form__title {
+  font-size: 22px;
+  line-height: 26px;
+  color: $primary;
+  margin: 20px 0;
+}
+
+.contacts-form__input {
+  max-width: 300px;
+}
+
+.contacts-form__input, .contacts-form__textarea {
+  margin: 12px 0;
+  input, textarea {
+    background: $inputBg;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-size: px-to-rem(17px);
+    line-height: px-to-rem(22px);
+    padding: 10px 15px 10px 19px;
+    appearance: none;
+    border: none;
+    display: block;
+    width: 100%;
+    color: $black;
+  }
+  &::placeholder {
+    color: $gray;
+  }
+}
+
+.contacts-form__textarea {
+  textarea {
+    min-height: 135px;
+    resize: none;
+  }
+}
+
+.contacts-form__button {
+  margin: 12px 0;
+  button {
+    @include btn();
+    display: block;
+    width: 100%;
+    background-image: none;
+    max-width: 100%;
+    text-align: center;
+    padding: 12px;
+    margin: 0;
+    font-size: px-to-rem(20px);
+    line-height: px-to-rem(24px);
+    font-weight: 600;
+  }
+}
+
+.contacts-form__file {
+  margin: 12px 0;
+  input {
+    display: none;
+  }
+  label {
+    background: url(#{$imgPath}clip.svg) 19px center no-repeat $inputBg;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-size: px-to-rem(17px);
+    line-height: px-to-rem(22px);
+    padding: 10px 15px 10px 55px;
+    appearance: none;
+    border: none;
+    display: block;
+    width: 100%;
+    color: $gray;
+    cursor: pointer;
+  }
+}
+
+.contacts-form__button {
+  max-width: 213px;
+}
+
+.contacts-form__conf {
+  margin: 15px 0 10px;
+  input {
+    display: none;
+    &:checked {
+      + label {
+        &::before {
+          background: url(#{$imgPath}conf-check.svg) center / cover no-repeat;
+          content: "";
+          display: block;
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  label {
+    color: $lightGray;
+    font-size: px-to-rem(12px);
+    line-height: px-to-rem(14px);
+    position: relative;
+    padding-left: 20px;
+    display: block;
+    &::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border: 1px solid $black;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  a {
+    color: $lightGray;
+    display: inline-block;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

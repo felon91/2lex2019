@@ -1,0 +1,77 @@
+.contacts {
+
+}
+
+.contacts__carousel {
+  margin: 20px 0 30px;
+}
+
+.contacts__text {
+  margin-bottom: 20px;
+  p {
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(17px);
+    color: $gray;
+    margin-bottom: 5px;
+  }
+  .contacts__phone {
+    font-size: px-to-rem(22px);
+    line-height: px-to-rem(22px);
+    color: $primary;
+    font-weight: 700;
+    border-bottom: none;
+  }
+  .contacts__mail {
+    a {
+      border-bottom: none;
+    }
+  }
+}
+
+.contacts__office {
+  margin-bottom: 20px;
+  p {
+    font-size: px-to-rem(19px);
+    line-height: px-to-rem(23px);
+    color: $primary;
+    font-weight: 700;
+  }
+  a {
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(17px);
+    border-bottom: none;
+    font-weight: 400;
+    span {
+      border-bottom: 1px dashed $buttonBg;
+    }
+  }
+}
+
+.contacts__address {
+  margin-bottom: 20px;
+  p {
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(22px);
+  }
+  a {
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(17px);
+    border-bottom: none;
+    font-weight: 400;
+    span {
+      border-bottom: 1px dashed $buttonBg;
+    }
+  }
+}
+
+.contacts__work-time {
+  margin-bottom: 20px;
+  p {
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(22px);
+    color: $gray;
+  }
+  span {
+    color: $black;
+  }
+}

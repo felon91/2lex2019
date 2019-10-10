@@ -179,21 +179,35 @@
             <p class="contacts__mail"><a href="#">info@2lex.ru</a></p>
           </div>
           <div class="contacts__office">
-            <p>Центральный офис в Москве <a href="#"><span>Офисы в других городах</span></a></p>
+            <p>Центральный офис в Москве <a href="#"><span>Офисы в других городах</span> &#8594;</a></p>
           </div>
           <div class="contacts__address">
-            <p>119021, г. Москва, Несвижский пер., дом 10 <a href="#"><span>Как добраться</span></a></p>
+            <p>119021, г. Москва, Несвижский пер., дом&nbsp;10 <a href="#"><span>Как добраться</span> &#8594;</a></p>
           </div>
           <div class="contacts__work-time">
-            <p>Время работы офиса: <span>пн-пт с 10-00  до  20-00.</span></p>
+            <p>Время работы офиса: <span>пн-пт с&nbsp;10-00 до&nbsp;20-00.</span></p>
+          </div>
+          <div class="contacts__carousel office">
+            <div class="office__carousel owl-carousel owl-theme">
+              <div class="office__item">
+                <img src="img/contacts1.jpg" alt="">
+              </div>
+              <div class="office__item">
+                <img src="img/contacts2.jpg" alt="">
+              </div>
+              <div class="office__item">
+                <img src="img/contacts3.jpg" alt="">
+              </div>
+              <div class="office__item">
+                <img src="img/contacts4.jpg" alt="">
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </article>
-  <div class="map">
-    Яндекс Карта
-  </div>
+  <div class="map" id="map"></div>
   <div class="contacts-form">
     <div class="contacts__wrap wrap">
       <h2>Напишите нам</h2>
@@ -202,7 +216,7 @@
           <input type="text" placeholder="Имя">
         </div>
         <div class="contacts-form__input">
-          <input type="tel" placeholder="Телефон">
+          <input class="mask" type="tel" placeholder="Телефон">
         </div>
         <div class="contacts-form__textarea">
           <textarea name="textarea" placeholder="Сообщение"></textarea>
@@ -300,5 +314,22 @@
 </div>
 <script src="js/all.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=11fe9e3d-718e-459f-adf1-4eaa9629803c&lang=ru_RU" type="text/javascript"></script>
+<script>
+  ymaps.ready(init);
+  function init(){
+    // Создание карты.
+    let myMap = new ymaps.Map("map", {
+      center: [55.730330, 37.583077],
+      zoom: 16
+    });
+    let myPlacemark = new ymaps.Placemark([55.730330, 37.583077], {
+      iconCaption: 'Несвежский пер, 10',
+    }, {
+      preset: 'islands#redIcon',
+    });
+    myMap.geoObjects.add(myPlacemark);
+  }
+</script>
 </body>
 </html>
