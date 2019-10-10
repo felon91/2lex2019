@@ -9,7 +9,7 @@
   margin: 20px 0;
 }
 
-.contacts-form__input {
+.contacts-form__input, .contacts-form__file {
   max-width: 300px;
 }
 
@@ -34,6 +34,7 @@
 }
 
 .contacts-form__textarea {
+  max-width: 670px;
   textarea {
     min-height: 135px;
     resize: none;
@@ -60,7 +61,12 @@
 .contacts-form__file {
   margin: 12px 0;
   input {
-    display: none;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
   }
   label {
     background: url(#{$imgPath}clip.svg) 19px center no-repeat $inputBg;
@@ -84,6 +90,7 @@
 
 .contacts-form__conf {
   margin: 15px 0 10px;
+  max-width: 470px;
   input {
     display: none;
     &:checked {
@@ -128,5 +135,12 @@
     &:hover {
       text-decoration: none;
     }
+  }
+}
+
+@media (min-width: 480px) {
+  .contacts-form__title {
+    font-size: px-to-rem(30px);
+    line-height: px-to-rem(36px);
   }
 }

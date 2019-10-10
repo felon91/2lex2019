@@ -35,6 +35,9 @@
     line-height: px-to-rem(23px);
     color: $primary;
     font-weight: 700;
+    > span {
+      margin-right: 15px;
+    }
   }
   a {
     font-size: px-to-rem(14px);
@@ -52,6 +55,9 @@
   p {
     font-size: px-to-rem(14px);
     line-height: px-to-rem(22px);
+    > span {
+      margin-right: 15px;
+    }
   }
   a {
     font-size: px-to-rem(14px);
@@ -73,5 +79,71 @@
   }
   span {
     color: $black;
+  }
+}
+
+@media (min-width: 480px) {
+  .contacts__text {
+    p {
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(19px);
+    }
+  }
+  .contacts__office {
+    p {
+      font-size: px-to-rem(26px);
+      line-height: px-to-rem(31px);
+    }
+    a {
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(19px);
+    }
+  }
+  .contacts__address {
+    margin-bottom: 0;
+    p {
+      margin-bottom: 5px;
+    }
+    a {
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(19px);
+    }
+  }
+  .contacts__address, .contacts__work-time {
+    p {
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(19px);
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .contacts__text {
+    p {
+      font-size: px-to-rem(17px);
+      line-height: px-to-rem(22px);
+    }
+  }
+  .contacts__office {
+    p {
+      font-size: px-to-rem(30px);
+      line-height: px-to-rem(36px);
+    }
+    a {
+      font-size: px-to-rem(17px);
+      line-height: px-to-rem(22px);
+    }
+  }
+  .contacts__address {
+    a {
+      font-size: px-to-rem(17px);
+      line-height: px-to-rem(22px);
+    }
+  }
+  .contacts__address, .contacts__work-time {
+    p {
+      font-size: px-to-rem(17px);
+      line-height: px-to-rem(22px);
+    }
   }
 }
