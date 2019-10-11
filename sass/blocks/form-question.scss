@@ -1,0 +1,147 @@
+.form-question {
+  margin: 0 0 30px;
+}
+
+p.form-question__text {
+  margin-bottom: 20px;
+  max-width: 670px;
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(19px);
+
+  a {
+    font-size: px-to-rem(22px);
+    line-height: px-to-rem(22px);
+    color: $buttonBg;
+    font-weight: 700;
+    border-bottom: none;
+  }
+}
+
+.form-question__input {
+  max-width: 670px;
+}
+
+.form-question__input, .form-question__textarea {
+  margin: 12px 0;
+  label {
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(19px);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  span {
+    color: $accent;
+  }
+  .form-question__span {
+    color: $gray;
+  }
+  input, textarea {
+    background: $inputBg;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-size: px-to-rem(17px);
+    line-height: px-to-rem(22px);
+    padding: 10px 15px 10px 19px;
+    appearance: none;
+    border: none;
+    display: block;
+    width: 100%;
+    color: $black;
+    max-width: 300px;
+  }
+  textarea {
+    max-width: 670px;
+  }
+  &::placeholder {
+    color: $gray;
+  }
+}
+
+.form-question__textarea {
+  max-width: 670px;
+  textarea {
+    min-height: 135px;
+    resize: none;
+  }
+}
+
+.form-question__button {
+  margin: 12px 0;
+  button {
+    @include btn();
+    display: block;
+    width: 100%;
+    background-image: none;
+    max-width: 100%;
+    text-align: center;
+    padding: 12px;
+    margin: 0;
+    font-size: px-to-rem(20px);
+    line-height: px-to-rem(24px);
+    font-weight: 600;
+  }
+}
+
+.form-question__button {
+  max-width: 213px;
+}
+
+.form-question__conf {
+  margin: 20px 0;
+  max-width: 670px;
+  input {
+    display: none;
+    &:checked {
+      + label {
+        &::before {
+          background: url(#{$imgPath}conf-check.svg) center / cover no-repeat;
+          content: "";
+          display: block;
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  label {
+    color: $lightGray;
+    font-size: px-to-rem(12px);
+    line-height: px-to-rem(14px);
+    position: relative;
+    padding-left: 20px;
+    display: block;
+    &::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border: 1px solid $black;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  a {
+    color: $lightGray;
+    display: inline-block;
+    border-bottom: none;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 780px) {
+  p.form-question__text {
+    font-size: px-to-rem(17px);
+    line-height: px-to-rem(22px);
+  }
+}
