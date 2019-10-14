@@ -1,0 +1,32 @@
+.filter-top {
+
+}
+
+.filter-top__item {
+  display: inline-flex;
+  align-items: center;
+  background-color: $buttonBg;
+  clip-path: polygon(calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%, 0 0);
+  margin: 0 10px 15px 0;
+  span {
+    font-size: px-to-rem(17px);
+    line-height: px-to-rem(22px);
+    padding: 4px 20px 4px 10px;
+    color: $white;
+  }
+  a {
+    margin-left: 10px;
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .filter-top__item {
+    span {
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(19px);
+    }
+  }
+}

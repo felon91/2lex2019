@@ -42,6 +42,8 @@
   cursor: pointer;
   margin: 0;
   padding: 0;
+  width: 28px;
+  height: 30px;
 }
 
 .form-modal__center {
@@ -56,5 +58,7 @@
   }
   .form-modal__close {
     right: 10px;
+    width: 18px;
+    height: 20px;
   }
 }

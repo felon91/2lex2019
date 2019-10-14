@@ -91,6 +91,9 @@
     background: $second;
     border-radius: 50px 0px;
   }
+  .article-by-theme--white {
+    background-color: $white;
+  }
   .article-by-theme__item {
     flex-basis: 48%;
     &:not(:first-child) {

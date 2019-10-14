@@ -130,6 +130,26 @@ $(document).ready(function () {
       $(e.target).addClass('active');
     }
   });
+  $('.filter__block p a').on('click', function (e) {
+    e.preventDefault();
+    if (!$(this).hasClass('active')) {
+      $('.filter__block p a').removeClass('active');
+      $(this).addClass('active');
+      let textValue = $(this).text();
+      $('.filter-top').html(`
+              <div class="filter-top__item">
+                  <a href="#">
+                  <img src="img/close-mini.svg" alt="">
+                  </a>
+                 <span>${textValue}</span>
+              </div>`);
+    }
+  });
+  $('.filter-top').on('click', '.filter-top__item a', function (e) {
+    e.preventDefault();
+    $(this).parents('.filter-top__item').remove();
+    $('.filter__block p a').removeClass('active');
+  });
   $('.mask').mask('+7 (999) 999-99-99');
 
   $('.header--sticky').sticky();
@@ -217,6 +237,11 @@ $(document).ready(function () {
   $('.container').on("click", '.contacts__address a', function (e) {
     e.preventDefault();
       $(".form-modal--way").addClass('form-modal--active');
+  });
+
+  $('.container').on("click", '.modal-form', function (e) {
+    e.preventDefault();
+      $(".form-modal--form").addClass('form-modal--active');
   });
 
   $('.container').on("click", '.form-modal__center', function (e) {

@@ -21,20 +21,27 @@ p.filter__title {
 }
 
 .filter__block {
-  padding: 10px 30px;
+  padding: 10px 20px;
   display: none;
   p {
-    margin: 5px 0;
+    margin: 3px 0;
   }
   a {
     border: none;
     color: $black;
+    padding: 5px 10px;
+    display: inline-block;
     &:hover {
       color: $buttonBgHover;
     }
     &:active {
       color: $buttonBgActive;
     }
+  }
+  a.active {
+    background-color: $buttonBg;
+    color: $white;
+    border-radius: 10px;
   }
 }
 
