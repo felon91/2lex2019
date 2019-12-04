@@ -88,10 +88,12 @@ $(document).ready(function () {
     responsive: {
       780: {
         margin: 25,
+        items: 3,
       },
       1170: {
         margin: 25,
         mouseDrag: false,
+        items: 4,
       }
     }
   });

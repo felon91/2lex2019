@@ -91,6 +91,16 @@
   background: url(#{$imgPath}warning.svg) left center no-repeat;
   padding-left: 35px;
   max-width: 280px;
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid $buttonBg;
+    &:hover {
+      border-bottom-color: $buttonBgHover;
+    }
+    &:active {
+      border-bottom-color: $buttonBgActive;
+    }
+  }
 }
 
 @media (min-width: 480px) {

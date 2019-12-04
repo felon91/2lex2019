@@ -37,11 +37,18 @@ ul.team__list {
   border-radius: 10px 10px 0 0;
   transition-property: transform;
   transition-duration: 500ms;
+  height: 100%;
+  object-fit: cover;
 }
 
 .team__info {
   padding: 20px;
   text-align: center;
+}
+
+.team__photo {
+  max-height: 360px;
+  overflow: hidden;
 }
 
 p.team__name {

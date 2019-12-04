@@ -44,11 +44,17 @@ p.form-question__text {
     line-height: px-to-rem(22px);
     padding: 10px 15px 10px 19px;
     appearance: none;
-    border: none;
     display: block;
     width: 100%;
     color: $black;
     max-width: 300px;
+    outline: none;
+    border: 1px solid transparent;
+    &:focus {
+      background: $white;
+      border-color: $buttonBgHover;
+      box-shadow: none;
+    }
   }
   textarea {
     max-width: 670px;
