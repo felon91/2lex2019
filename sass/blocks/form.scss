@@ -45,10 +45,15 @@
     line-height: px-to-rem(22px);
     padding: 10px 15px 10px 19px;
     appearance: none;
-    border: none;
     display: block;
     width: 100%;
     color: $black;
+    outline: none;
+    border: 1px solid transparent;
+    &:focus {
+      border-color: $buttonBgHover;
+      box-shadow: none;
+    }
   }
   &::placeholder {
     color: $gray;
@@ -125,6 +130,11 @@
   .form__input {
     input {
       background-color: $grayBlock;
+      &:focus {
+        background-color: $white;
+        border-color: $buttonBgHover;
+        box-shadow: none;
+      }
     }
   }
 }
